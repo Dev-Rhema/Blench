@@ -62,12 +62,12 @@ function App() {
       <div
         className="flex flex-col items-center justify-center h-screen max-lg:h-full"
         style={{
-          backgroundImage: `url("../public/bg.jpg")`,
+          backgroundImage: `url("/bg.jpg")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <img src="../public/logo.svg" alt="" className="w-120" />
+        <img src="/logo.svg" alt="" className="w-120" />
         <div
           style={{
             background: "rgba(10,10,60,0.32)", // dark blue glass
@@ -96,17 +96,23 @@ function App() {
               ))}
             </div>
             {/* OPTION */}
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-2 gap-2 w-full max-w-xs mx-auto">
               {paddedStyles.map((style, idx) => (
                 <div
                   key={idx}
-                  className={`w-full aspect-square cursor-pointer border border-gray-100 flex items-center justify-center ${
+                  className={`aspect-square cursor-pointer border border-gray-100 flex items-center justify-center ${
                     selectedStyleIdx === idx ? "ring-2 ring-rose-500" : ""
                   }`}
                   style={{
                     background:
                       "radial-gradient(circle at 25% 25%, #fff 0%, #27272a 75%)",
                     opacity: style ? 1 : 0.3,
+                    width: "100%",
+                    height: "100%",
+                    minWidth: "4rem",
+                    minHeight: "4rem",
+                    maxWidth: "8rem",
+                    maxHeight: "8rem",
                   }}
                   onClick={() => {
                     if (style) {
@@ -135,7 +141,7 @@ function App() {
               ))}
             </div>
             {/* COLOR */}
-            {colors.length > 0 && (
+            {selectedStyleIdx >= 0 && colors.length > 0 ? (
               <div className="flex justify-between mt-2">
                 {colors.map((color) => (
                   <div
@@ -167,6 +173,20 @@ function App() {
                       className="w-8 h-8 object-contain rounded-full"
                     />
                   </div>
+                ))}
+              </div>
+            ) : (
+              <div className="flex justify-between mt-2">
+                {[...Array(4)].map((_, idx) => (
+                  <div
+                    key={idx}
+                    className="size-10 p-2 rounded-full border flex items-center justify-center"
+                    style={{
+                      background:
+                        "radial-gradient(circle at 25% 25%, #fff 0%, #27272a 75%)",
+                      opacity: 0.3,
+                    }}
+                  />
                 ))}
               </div>
             )}
