@@ -2,60 +2,66 @@ import React, { useState } from "react";
 import avatarParts from "./AvatarParts";
 import { toPng } from "html-to-image";
 
-const initialSelections = {
-  head: {
-    styleIdx: 0,
-    color: Object.keys(avatarParts.head.styles[0].colors)[0],
-  },
-  eye: {
-    styleIdx: 0,
-    color: Object.keys(avatarParts.eye.styles[0].colors)[0],
-  },
-  hair: {
-    styleIdx: 0,
-    color: Object.keys(avatarParts.hair.styles[0].colors)[0],
-  },
-  shirt: {
-    styleIdx: 0,
-    color: Object.keys(avatarParts.shirt.styles[0].colors)[0],
-  },
-};
+// Generate initial selections dynamically
+const getInitialSelections = () =>
+  Object.fromEntries(
+    Object.entries(avatarParts).map(([part, { styles }]) => [
+      part,
+      {
+        styleIdx: 0,
+        color: Object.keys(styles[0].colors)[0],
+      },
+    ])
+  );
 
 function App() {
   const [selectedPart, setSelectedPart] = useState("head");
-  const [selections, setSelections] = useState(initialSelections);
+  const [selections, setSelections] = useState(getInitialSelections());
 
-  // Get current style and color for selected part
   const selectedStyleIdx = selections[selectedPart].styleIdx;
   const selectedColor = selections[selectedPart].color;
-
-  // Get styles and colors for selected part
   const styles = avatarParts[selectedPart].styles;
   const colors =
     selectedStyleIdx >= 0 && styles[selectedStyleIdx]
       ? Object.keys(styles[selectedStyleIdx].colors)
       : [];
 
-  // Pad styles to 4 items
-  const paddedStyles = [...styles];
-  while (paddedStyles.length < 4) {
-    paddedStyles.push(null);
-  }
+  // Pad styles to always show 4 options
+  const paddedStyles = [...styles, ...Array(4 - styles.length).fill(null)];
 
-  // Helper to get current SVG src for any part
+  // Get current SVG src for any part
   const getCurrentSrc = (part) => {
-    const styleIdx = selections[part].styleIdx;
-    const color = selections[part].color;
-    if (
-      styleIdx === -1 ||
-      color === null ||
-      !avatarParts[part].styles[styleIdx] ||
-      !avatarParts[part].styles[styleIdx].colors[color]
-    ) {
-      return null; // No image for this part
+    const { styleIdx, color } = selections[part];
+    const style = avatarParts[part].styles[styleIdx];
+    return style && style.colors[color] ? style.colors[color] : null;
+  };
+
+  // Randomize avatar selections
+  const randomizeSelections = () => {
+    const randomSelections = {};
+    Object.entries(avatarParts).forEach(([part, { styles }]) => {
+      const styleIdx = Math.floor(Math.random() * styles.length);
+      const colorKeys = Object.keys(styles[styleIdx].colors);
+      const color = colorKeys[Math.floor(Math.random() * colorKeys.length)];
+      randomSelections[part] = { styleIdx, color };
+    });
+    setSelections(randomSelections);
+  };
+
+  // Download avatar as PNG
+  const downloadAvatar = async () => {
+    const avatarNode = document.getElementById("avatar-canvas");
+    if (avatarNode) {
+      try {
+        const dataUrl = await toPng(avatarNode, { cacheBust: true });
+        const link = document.createElement("a");
+        link.download = "avatar.png";
+        link.href = dataUrl;
+        link.click();
+      } catch (err) {
+        console.error("Download failed:", err);
+      }
     }
-    // Always return string path
-    return avatarParts[part].styles[styleIdx].colors[color];
   };
 
   return (
@@ -139,51 +145,47 @@ function App() {
               ))}
             </div>
             {/* COLOR */}
-            {selectedStyleIdx >= 0 && colors.length > 0 ? (
-              <div className="flex justify-between mt-2">
-                {colors.map((color) => (
-                  <div
-                    key={color}
-                    className={`size-10 p-2 rounded-full cursor-pointer border flex items-center justify-center ${
-                      selectedColor === color ? "ring-2 ring-rose-500" : ""
-                    }`}
-                    style={{
-                      background:
-                        "radial-gradient(circle at 25% 25%, #fff 0%, #27272a 75%)",
-                    }}
-                    onClick={() =>
-                      setSelections((prev) => ({
-                        ...prev,
-                        [selectedPart]: {
-                          ...prev[selectedPart],
-                          color,
-                        },
-                      }))
-                    }
-                  >
-                    <img
-                      src={styles[selectedStyleIdx].colors[color]}
-                      alt={color}
-                      className="w-8 h-8 object-contain rounded-full"
+            <div className="flex justify-between mt-2">
+              {selectedStyleIdx >= 0 && colors.length > 0
+                ? colors.map((color) => (
+                    <div
+                      key={color}
+                      className={`size-10 p-2 rounded-full cursor-pointer border flex items-center justify-center ${
+                        selectedColor === color ? "ring-2 ring-rose-500" : ""
+                      }`}
+                      style={{
+                        background:
+                          "radial-gradient(circle at 25% 25%, #fff 0%, #27272a 75%)",
+                      }}
+                      onClick={() =>
+                        setSelections((prev) => ({
+                          ...prev,
+                          [selectedPart]: {
+                            ...prev[selectedPart],
+                            color,
+                          },
+                        }))
+                      }
+                    >
+                      <img
+                        src={styles[selectedStyleIdx].colors[color]}
+                        alt={color}
+                        className="w-8 h-8 object-contain rounded-full"
+                      />
+                    </div>
+                  ))
+                : [...Array(4)].map((_, idx) => (
+                    <div
+                      key={idx}
+                      className="size-10 p-2 rounded-full border flex items-center justify-center"
+                      style={{
+                        background:
+                          "radial-gradient(circle at 25% 25%, #fff 0%, #27272a 75%)",
+                        opacity: 0.3,
+                      }}
                     />
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <div className="flex justify-between mt-2">
-                {[...Array(4)].map((_, idx) => (
-                  <div
-                    key={idx}
-                    className="size-10 p-2 rounded-full border flex items-center justify-center"
-                    style={{
-                      background:
-                        "radial-gradient(circle at 25% 25%, #fff 0%, #27272a 75%)",
-                      opacity: 0.3,
-                    }}
-                  />
-                ))}
-              </div>
-            )}
+                  ))}
+            </div>
           </div>
           {/* CANVAS */}
           <div className="col-span-2 border border-rose-100  h-full flex flex-col justify-center items-center">
@@ -228,20 +230,7 @@ function App() {
       hover:shadow-[0_0_20px_5px_rgba(200,0,40,0.4)]
       hover:bg-gradient-to-br hover:from-red-500 hover:via-blue-700 hover:to-blue-900
       transition-all duration-200"
-                onClick={() => {
-                  const randomSelections = {};
-                  Object.keys(avatarParts).forEach((part) => {
-                    const styles = avatarParts[part].styles;
-                    const styleIdx = Math.floor(Math.random() * styles.length);
-                    const colors = Object.keys(styles[styleIdx].colors);
-                    const colorIdx = Math.floor(Math.random() * colors.length);
-                    randomSelections[part] = {
-                      styleIdx,
-                      color: colors[colorIdx],
-                    };
-                  });
-                  setSelections(randomSelections);
-                }}
+                onClick={randomizeSelections}
               >
                 <span className="drop-shadow-lg">🎲 Randomize</span>
               </button>
@@ -251,21 +240,7 @@ function App() {
       hover:shadow-[0_0_20px_5px_rgba(10,10,60,0.4)]
       hover:bg-gradient-to-br hover:from-blue-700 hover:via-red-600 hover:to-red-900
       transition-all duration-200"
-                onClick={async () => {
-                  const avatarNode = document.getElementById("avatar-canvas");
-                  if (avatarNode) {
-                    toPng(avatarNode, { cacheBust: true })
-                      .then((dataUrl) => {
-                        const link = document.createElement("a");
-                        link.download = "avatar.png";
-                        link.href = dataUrl;
-                        link.click();
-                      })
-                      .catch((err) => {
-                        console.error("Download failed:", err);
-                      });
-                  }
-                }}
+                onClick={downloadAvatar}
               >
                 <span className="drop-shadow-lg">⬇️ Download</span>
               </button>
