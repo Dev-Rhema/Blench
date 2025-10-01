@@ -147,11 +147,12 @@ function ColorSelector({
   );
 }
 
-function AvatarCanvas({ selections }) {
+function AvatarCanvas({ selections, avatarBg }) {
   return (
     <div
-      className="w-[300px] h-[300px] bg-gray-800 relative"
+      className="w-[300px] h-[300px] relative"
       id="avatar-canvas"
+      style={{ background: avatarBg }}
     >
       <img
         src={getCurrentSrc("shirt", selections)}
@@ -161,18 +162,18 @@ function AvatarCanvas({ selections }) {
       <img
         src={getCurrentSrc("head", selections)}
         alt="head"
-        className="absolute bottom-24 right-46 translate-x-1/2"
+        className="absolute bottom-[94.5px] right-47 translate-x-1/2"
       />
       <img
         src={getCurrentSrc("eye", selections)}
         alt="eye"
-        className="absolute bottom-[138px] right-[202px] translate-x-1/2"
+        className="absolute bottom-[136px] right-[206px] translate-x-1/2"
       />
       {getCurrentSrc("hair", selections) && (
         <img
           src={getCurrentSrc("hair", selections)}
           alt="hair"
-          className="absolute bottom-28 right-[188px] translate-x-1/2"
+          className="absolute bottom-28 right-[193px] translate-x-1/2"
         />
       )}
     </div>
@@ -182,6 +183,7 @@ function AvatarCanvas({ selections }) {
 function App() {
   const [selectedPart, setSelectedPart] = useState("head");
   const [selections, setSelections] = useState(getInitialSelections());
+  const [avatarBg, setAvatarBg] = useState("#27272a");
 
   const selectedStyleIdx = selections[selectedPart].styleIdx;
   const selectedColor = selections[selectedPart].color;
@@ -219,74 +221,99 @@ function App() {
   };
 
   return (
-    <div
-      className="flex flex-col items-center justify-center h-screen max-lg:h-full"
-      style={{
-        backgroundImage: `url("/bg.jpg")`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      <img src="/logo.svg" alt="Logo" className="w-120" />
+    <>
       <div
+        className="flex flex-col items-center justify-center h-screen max-lg:h-full"
         style={{
-          background: "rgba(10,10,60,0.32)",
-          border: "1px solid rgba(200,0,40,0.42)",
+          backgroundImage: `url("/bg.jpg")`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
-        className="rounded-2xl shadow-[0_4px_30px_rgba(0,0,0,0.2)] backdrop-blur-[4.3px] w-[80vw] h-[70vh] grid grid-cols-3 items-center p-10 gap-6 max-lg:grid-cols-1 max-lg:w-full max-lg:rounded-none max-lg:p-2 max-lg:h-full max-lg:gap-0"
       >
-        {/* OPTIONS */}
-        <div className="border border-rose-100 h-full p-6 gap-2 flex flex-col max-lg:mb-4">
-          <PartSelector
-            selectedPart={selectedPart}
-            setSelectedPart={setSelectedPart}
-            selections={selections}
-          />
-          <StyleSelector
-            paddedStyles={paddedStyles}
-            selectedStyleIdx={selectedStyleIdx}
-            setSelections={setSelections}
-            selectedPart={selectedPart}
-          />
-          <ColorSelector
-            colors={colors}
-            selectedStyleIdx={selectedStyleIdx}
-            selectedColor={selectedColor}
-            styles={styles}
-            setSelections={setSelections}
-            selectedPart={selectedPart}
-          />
-        </div>
-        {/* CANVAS */}
-        <div className="col-span-2 border border-rose-100 h-full flex flex-col justify-center items-center">
-          <main className="w-full flex items-center justify-center m-auto h-full">
-            <AvatarCanvas selections={selections} />
-          </main>
-          <div className="flex gap-4 my-6">
-            <button
-              className="px-7 py-3 rounded-xl font-bold bg-gradient-to-br from-red-700 via-blue-900 to-blue-700 text-white shadow-lg border-none cursor-pointer
+        <img src="/logo.svg" alt="Logo" className="w-120" />
+        <div
+          style={{
+            background: "rgba(10,10,60,0.32)",
+            border: "1px solid rgba(200,0,40,0.42)",
+          }}
+          className="rounded-2xl shadow-[0_4px_30px_rgba(0,0,0,0.2)] backdrop-blur-[4.3px] w-[80vw] h-[70vh] grid grid-cols-3 items-center p-10 gap-6 max-lg:grid-cols-1 max-lg:w-full max-lg:rounded-none max-lg:p-2 max-lg:h-full max-lg:gap-0"
+        >
+          {/* OPTIONS */}
+          <div className="border border-rose-100 h-full p-6 gap-2 flex flex-col max-lg:mb-4">
+            <PartSelector
+              selectedPart={selectedPart}
+              setSelectedPart={setSelectedPart}
+              selections={selections}
+            />
+            <StyleSelector
+              paddedStyles={paddedStyles}
+              selectedStyleIdx={selectedStyleIdx}
+              setSelections={setSelections}
+              selectedPart={selectedPart}
+            />
+            <ColorSelector
+              colors={colors}
+              selectedStyleIdx={selectedStyleIdx}
+              selectedColor={selectedColor}
+              styles={styles}
+              setSelections={setSelections}
+              selectedPart={selectedPart}
+            />
+          </div>
+          {/* CANVAS */}
+          <div className="col-span-2 border border-rose-100 h-full flex flex-col justify-center items-center">
+            <main className="w-full flex flex-col items-center justify-center m-auto h-full">
+              <AvatarCanvas selections={selections} avatarBg={avatarBg} />
+              <div className="flex flex-col items-center mt-4">
+                <label
+                  htmlFor="avatar-bg"
+                  className="text-white mb-1 text-sm flex items-center flex-col"
+                >
+                  <p className="italic ">
+                    click on the bar below to select background color
+                  </p>
+                </label>
+                <input
+                  id="avatar-bg"
+                  type="color"
+                  value={avatarBg}
+                  onChange={(e) => setAvatarBg(e.target.value)}
+                  className="w-[300px] h-8 rounded border-none"
+                  style={{ background: "none" }}
+                />
+              </div>
+            </main>
+            <div className="flex gap-4 my-6">
+              <button
+                className="px-7 py-3 rounded-xl font-bold bg-gradient-to-br from-red-700 via-blue-900 to-blue-700 text-white shadow-lg border-none cursor-pointer
       backdrop-blur-md bg-opacity-80
       hover:shadow-[0_0_20px_5px_rgba(200,0,40,0.4)]
       hover:bg-gradient-to-br hover:from-red-500 hover:via-blue-700 hover:to-blue-900
       transition-all duration-200"
-              onClick={randomizeSelections}
-            >
-              <span className="drop-shadow-lg">🎲 Randomize</span>
-            </button>
-            <button
-              className="px-7 py-3 rounded-xl font-bold bg-gradient-to-br from-blue-900 via-red-700 to-red-600 text-white shadow-lg border-none cursor-pointer
+                onClick={randomizeSelections}
+              >
+                <span className="drop-shadow-lg">🎲 Randomize</span>
+              </button>
+              <button
+                className="px-7 py-3 rounded-xl font-bold bg-gradient-to-br from-blue-900 via-red-700 to-red-600 text-white shadow-lg border-none cursor-pointer
       backdrop-blur-md bg-opacity-80
       hover:shadow-[0_0_20px_5px_rgba(10,10,60,0.4)]
       hover:bg-gradient-to-br hover:from-blue-700 hover:via-red-600 hover:to-red-900
       transition-all duration-200"
-              onClick={downloadAvatar}
-            >
-              <span className="drop-shadow-lg">⬇️ Download</span>
-            </button>
+                onClick={downloadAvatar}
+              >
+                <span className="drop-shadow-lg">⬇️ Download</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <footer className="bg-blue-950 py-2 text-center text-white ">
+        <a href="https://x.com/dev_rhema" className="cursor-pointer">
+          &copy; Dev Rhema 𝕏
+        </a>
+      </footer>
+    </>
   );
 }
 
