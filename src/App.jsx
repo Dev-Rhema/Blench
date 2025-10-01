@@ -225,12 +225,16 @@ function App() {
       <div
         className="flex flex-col items-center justify-center h-screen max-lg:h-full"
         style={{
-          backgroundImage: `url("/bg.jpg")`,
+          backgroundImage: `url("https://res.cloudinary.com/dwzojroob/image/upload/v1759309914/your-folder-name/fxrujpiwnv6rwr89qxqx.jpg")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <img src="/logo.svg" alt="Logo" className="w-120" />
+        <img
+          src="https://res.cloudinary.com/dwzojroob/image/upload/v1759309928/your-folder-name/aazzbngqif6qmymzuuug.svg"
+          alt="Logo"
+          className="w-120"
+        />
         <div
           style={{
             background: "rgba(10,10,60,0.32)",
