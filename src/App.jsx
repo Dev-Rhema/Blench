@@ -12,7 +12,7 @@ const initialSelections = {
     color: Object.keys(avatarParts.eye.styles[0].colors)[0],
   },
   hair: {
-    styleIdx: 0, // Show first hair style by default
+    styleIdx: 0,
     color: Object.keys(avatarParts.hair.styles[0].colors)[0],
   },
   shirt: {
@@ -54,11 +54,13 @@ function App() {
     ) {
       return null; // No image for this part
     }
+    // Always return string path
     return avatarParts[part].styles[styleIdx].colors[color];
   };
 
   return (
     <>
+      <img src="/Head/basehead.svg" alt="" />
       <div
         className="flex flex-col items-center justify-center h-screen max-lg:h-full"
         style={{
@@ -128,11 +130,7 @@ function App() {
                 >
                   {style && (
                     <img
-                      src={
-                        style.colors[Object.keys(style.colors)[0]].src
-                          ? style.colors[Object.keys(style.colors)[0]].src
-                          : style.colors[Object.keys(style.colors)[0]]
-                      }
+                      src={style.colors[Object.keys(style.colors)[0]]}
                       alt={style.name}
                       className="w-3/4 h-3/4 object-contain"
                     />
@@ -164,11 +162,7 @@ function App() {
                     }
                   >
                     <img
-                      src={
-                        styles[selectedStyleIdx].colors[color].src
-                          ? styles[selectedStyleIdx].colors[color].src
-                          : styles[selectedStyleIdx].colors[color]
-                      }
+                      src={styles[selectedStyleIdx].colors[color]}
                       alt={color}
                       className="w-8 h-8 object-contain rounded-full"
                     />
@@ -200,46 +194,27 @@ function App() {
               >
                 {/* SHIRT */}
                 <img
-                  src={
-                    getCurrentSrc("shirt") &&
-                    (getCurrentSrc("shirt").src
-                      ? getCurrentSrc("shirt").src
-                      : getCurrentSrc("shirt"))
-                  }
-                  alt=""
+                  src={getCurrentSrc("shirt")}
+                  alt="shirt"
                   className="absolute bottom-0 left right-1/2 translate-x-1/2 z-10"
                 />
                 {/* HEAD */}
                 <img
-                  src={
-                    getCurrentSrc("head") &&
-                    (getCurrentSrc("head").src
-                      ? getCurrentSrc("head").src
-                      : getCurrentSrc("head"))
-                  }
-                  alt=""
+                  src={getCurrentSrc("head")}
+                  alt="head"
                   className="absolute bottom-24 right-46 translate-x-1/2"
                 />
                 {/* EYE */}
                 <img
-                  src={
-                    getCurrentSrc("eye") &&
-                    (getCurrentSrc("eye").src
-                      ? getCurrentSrc("eye").src
-                      : getCurrentSrc("eye"))
-                  }
-                  alt=""
+                  src={getCurrentSrc("eye")}
+                  alt="eye"
                   className="absolute bottom-[138px] right-[202px] translate-x-1/2"
                 />
                 {/* HAIR */}
                 {getCurrentSrc("hair") && (
                   <img
-                    src={
-                      getCurrentSrc("hair").src
-                        ? getCurrentSrc("hair").src
-                        : getCurrentSrc("hair")
-                    }
-                    alt=""
+                    src={getCurrentSrc("hair")}
+                    alt="hair"
                     className="absolute bottom-28 right-[188px] translate-x-1/2"
                   />
                 )}
