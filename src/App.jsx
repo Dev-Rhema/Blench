@@ -162,18 +162,18 @@ function AvatarCanvas({ selections, avatarBg }) {
       <img
         src={getCurrentSrc("head", selections)}
         alt="head"
-        className="absolute bottom-[94.5px] right-47 translate-x-1/2"
+        className="absolute bottom-[94.5px] right-46 translate-x-1/2"
       />
       <img
         src={getCurrentSrc("eye", selections)}
         alt="eye"
-        className="absolute bottom-[136px] right-[206px] translate-x-1/2"
+        className="absolute bottom-[136px] right-[203px] translate-x-1/2"
       />
       {getCurrentSrc("hair", selections) && (
         <img
           src={getCurrentSrc("hair", selections)}
           alt="hair"
-          className="absolute bottom-28 right-[193px] translate-x-1/2"
+          className="absolute bottom-28 right-[190px] translate-x-1/2"
         />
       )}
     </div>
@@ -269,7 +269,7 @@ function App() {
                   htmlFor="avatar-bg"
                   className="text-white mb-1 text-sm flex items-center flex-col"
                 >
-                  <p className="italic ">
+                  <p className="italic">
                     click on the bar below to select background color
                   </p>
                 </label>
