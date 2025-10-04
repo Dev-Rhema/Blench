@@ -1,44 +1,89 @@
 import React, { useState } from "react";
-import avatarParts from "./AvatarParts";
+import avatarPartsMale from "./AvatarPartsMale";
+import avatarPartsFemale from "./AvatarPartsFemale";
 import { toPng } from "html-to-image";
+import logo from "./logo.svg";
 
-const PARTS = ["head", "hair", "eye", "shirt"];
+// Dynamically get all trait keys from avatarParts
+function getParts(avatarParts) {
+  return Object.keys(avatarParts);
+}
 
-// Generate initial selections dynamically
-const getInitialSelections = () =>
+// Generate initial selections dynamically for a given avatarParts
+const getInitialSelections = (avatarParts) =>
   Object.fromEntries(
     Object.entries(avatarParts).map(([part, { styles }]) => [
       part,
       {
         styleIdx: 0,
-        color: Object.keys(styles[0].colors)[0],
+        color:
+          part === "head"
+            ? Object.keys(styles[0].colors).find(
+                (c) => c.toLowerCase() === "light"
+              ) || Object.keys(styles[0].colors)[0]
+            : Object.keys(styles[0].colors)[0],
       },
     ])
   );
 
-function getCurrentSrc(part, selections) {
+function getCurrentSrc(part, selections, avatarParts) {
+  if (!selections || !avatarParts || !avatarParts[part] || !selections[part]) {
+    console.warn(`Missing trait or selection for part: ${part}`);
+    return null;
+  }
   const { styleIdx, color } = selections[part];
-  const style = avatarParts[part].styles[styleIdx];
-  return style && style.colors[color] ? style.colors[color] : null;
+  const styles = avatarParts[part].styles;
+  if (!Array.isArray(styles) || styles.length === 0) {
+    console.warn(`No styles found for part: ${part}`);
+    return null;
+  }
+  const style = styles[styleIdx];
+  if (!style || !style.colors) {
+    console.warn(
+      `No style/colors found for part: ${part}, styleIdx: ${styleIdx}`
+    );
+    return null;
+  }
+  // If the color exists, use it. Otherwise, use the first available color key.
+  if (style.colors[color]) {
+    return style.colors[color];
+  }
+  const colorKeys = Object.keys(style.colors);
+  if (colorKeys.length > 0) {
+    console.warn(
+      `Color '${color}' not found for part: ${part}. Using '${colorKeys[0]}' instead.`
+    );
+    return style.colors[colorKeys[0]];
+  }
+  console.warn(`No colors available for part: ${part}, styleIdx: ${styleIdx}`);
+  return null;
 }
 
-function PartSelector({ selectedPart, setSelectedPart, selections }) {
+function PartSelector({
+  selectedPart,
+  setSelectedPart,
+  selections,
+  avatarParts,
+}) {
+  const PARTS = getParts(avatarParts);
   return (
-    <div className="w-full flex justify-between">
+    <div className="w-full grid grid-cols-4 gap-4 justify-items-center">
       {PARTS.map((part) => (
-        <img
-          key={part}
-          src={getCurrentSrc(part, selections)}
-          alt={part}
-          className={`size-10 p-2 rounded-full cursor-pointer border ${
-            selectedPart === part ? "ring-2 ring-rose-500" : ""
-          }`}
-          style={{
-            background:
-              "radial-gradient(circle at 25% 25%, #fff 0%, #27272a 75%)",
-          }}
-          onClick={() => setSelectedPart(part)}
-        />
+        <div key={part} className="flex flex-col items-center">
+          <img
+            src={getCurrentSrc(part, selections, avatarParts)}
+            alt={part}
+            className={`size-10 p-2 rounded-full cursor-pointer border ${
+              selectedPart === part ? "ring-2 ring-rose-500" : ""
+            }`}
+            style={{
+              background:
+                "radial-gradient(circle at 25% 25%, #fff 0%, #27272a 75%)",
+            }}
+            onClick={() => setSelectedPart(part)}
+          />
+          <span className="text-xs text-white mt-1">{part}</span>
+        </div>
       ))}
     </div>
   );
@@ -101,11 +146,17 @@ function ColorSelector({
   styles,
   setSelections,
   selectedPart,
+  selections,
 }) {
+  // If hands, only show color matching head color
+  let filteredColors = colors;
+  if (selectedPart === "hands" && selections && selections.head) {
+    filteredColors = colors.filter((c) => c === selections.head.color);
+  }
   return (
-    <div className="flex justify-between mt-2">
-      {selectedStyleIdx >= 0 && colors.length > 0
-        ? colors.map((color) => (
+    <div className="grid grid-cols-4 gap-4 mt-2 justify-items-center">
+      {selectedStyleIdx >= 0 && filteredColors.length > 0
+        ? filteredColors.map((color) => (
             <div
               key={color}
               className={`size-10 p-2 rounded-full cursor-pointer border flex items-center justify-center ${
@@ -147,43 +198,80 @@ function ColorSelector({
   );
 }
 
-function AvatarCanvas({ selections, avatarBg }) {
+function AvatarCanvas({ selections, avatarBg, avatarParts }) {
+  // Define preferred rendering order
+  const preferredOrder = [
+    "shirt",
+    "head",
+    "hair",
+    "eye",
+    "earrings",
+    "hands",
+    "tattoos",
+    // Add other traits as needed, or leave others to default
+  ];
+  // Custom z-index for each part
+  const zIndexMap = {
+    shirt: 100,
+    head: 50,
+    hair: 80,
+    eye: 70,
+    earrings: 100,
+    hands: 10,
+    tattoos: 60,
+    // Add more parts and z-index values as needed
+  };
+  const PARTS = getParts(avatarParts);
+  // Sort parts: preferredOrder first, then others
+  const sortedParts = [
+    ...preferredOrder.filter((part) => PARTS.includes(part)),
+    ...PARTS.filter((part) => !preferredOrder.includes(part)),
+  ];
   return (
     <div
       className="w-[300px] h-[300px] relative"
       id="avatar-canvas"
       style={{ background: avatarBg }}
     >
-      <img
-        src={getCurrentSrc("shirt", selections)}
-        alt="shirt"
-        className="absolute bottom-0 left right-1/2 translate-x-1/2 z-10"
-      />
-      <img
-        src={getCurrentSrc("head", selections)}
-        alt="head"
-        className="absolute bottom-[94.5px] right-46 translate-x-1/2"
-      />
-      <img
-        src={getCurrentSrc("eye", selections)}
-        alt="eye"
-        className="absolute bottom-[136px] right-[203px] translate-x-1/2"
-      />
-      {getCurrentSrc("hair", selections) && (
-        <img
-          src={getCurrentSrc("hair", selections)}
-          alt="hair"
-          className="absolute bottom-28 right-[190px] translate-x-1/2"
-        />
-      )}
+      {sortedParts.map((part, idx) => {
+        const src = getCurrentSrc(part, selections, avatarParts);
+        if (!src) return null;
+        const zIndex =
+          zIndexMap[part] !== undefined ? zIndexMap[part] : 10 + idx;
+        return (
+          <img
+            key={part}
+            src={src}
+            alt={part}
+            className="absolute left-0 top-0 w-full h-full object-contain"
+            style={{ zIndex }}
+          />
+        );
+      })}
     </div>
   );
 }
 
 function App() {
+  const [gender, setGender] = useState("male");
   const [selectedPart, setSelectedPart] = useState("head");
-  const [selections, setSelections] = useState(getInitialSelections());
+  const [avatarParts, setAvatarParts] = useState(avatarPartsMale);
+  const [selections, setSelections] = useState(
+    getInitialSelections(avatarPartsMale)
+  );
   const [avatarBg, setAvatarBg] = useState("#27272a");
+
+  // Update avatarParts and selections when gender changes
+  React.useEffect(() => {
+    if (gender === "male") {
+      setAvatarParts(avatarPartsMale);
+      setSelections(getInitialSelections(avatarPartsMale));
+    } else {
+      setAvatarParts(avatarPartsFemale);
+      setSelections(getInitialSelections(avatarPartsFemale));
+    }
+    setSelectedPart("head");
+  }, [gender]);
 
   const selectedStyleIdx = selections[selectedPart].styleIdx;
   const selectedColor = selections[selectedPart].color;
@@ -192,7 +280,10 @@ function App() {
     selectedStyleIdx >= 0 && styles[selectedStyleIdx]
       ? Object.keys(styles[selectedStyleIdx].colors)
       : [];
-  const paddedStyles = [...styles, ...Array(4 - styles.length).fill(null)];
+  const paddedStyles =
+    styles.length < 4
+      ? [...styles, ...Array(4 - styles.length).fill(null)]
+      : styles;
 
   const randomizeSelections = () => {
     const randomSelections = {};
@@ -202,6 +293,18 @@ function App() {
       const color = colorKeys[Math.floor(Math.random() * colorKeys.length)];
       randomSelections[part] = { styleIdx, color };
     });
+    // Sync hand color to head color if possible
+    if (randomSelections.head && randomSelections.hands) {
+      const headColor = randomSelections.head.color;
+      const handStyleIdx = randomSelections.hands.styleIdx;
+      const handColors = avatarParts.hands.styles[handStyleIdx].colors;
+      if (handColors[headColor]) {
+        randomSelections.hands.color = headColor;
+      } else {
+        // fallback: pick first available hand color
+        randomSelections.hands.color = Object.keys(handColors)[0];
+      }
+    }
     setSelections(randomSelections);
   };
 
@@ -220,34 +323,73 @@ function App() {
     }
   };
 
+  // Sync hand color to head color when head changes
+  React.useEffect(() => {
+    if (selections && selections.head && selections.hands) {
+      const headColor = selections.head.color;
+      const handStyleIdx = selections.hands.styleIdx;
+      const handColors = avatarParts.hands.styles[handStyleIdx].colors;
+      if (!handColors[headColor]) return;
+      if (selections.hands.color !== headColor) {
+        setSelections((prev) => ({
+          ...prev,
+          hands: {
+            ...prev.hands,
+            color: headColor,
+          },
+        }));
+      }
+    }
+  }, [selections.head?.color, avatarParts]);
+
   return (
     <>
       <div
-        className="flex flex-col items-center justify-center h-screen max-lg:h-full"
+        className="flex flex-col items-center justify-center min-h-screen max-lg:h-full"
         style={{
           backgroundImage: `url("https://res.cloudinary.com/dwzojroob/image/upload/v1759309914/your-folder-name/fxrujpiwnv6rwr89qxqx.jpg")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <img
-          src="https://res.cloudinary.com/dwzojroob/image/upload/v1759309928/your-folder-name/aazzbngqif6qmymzuuug.svg"
-          alt="Logo"
-          className="w-120"
-        />
+        <img src={logo} alt="Logo" className="w-120" />
         <div
           style={{
             background: "rgba(10,10,60,0.32)",
             border: "1px solid rgba(200,0,40,0.42)",
           }}
-          className="rounded-2xl shadow-[0_4px_30px_rgba(0,0,0,0.2)] backdrop-blur-[4.3px] w-[80vw] h-[70vh] grid grid-cols-3 items-center p-10 gap-6 max-lg:grid-cols-1 max-lg:w-full max-lg:rounded-none max-lg:p-2 max-lg:h-full max-lg:gap-0"
+          className="rounded-2xl shadow-[0_4px_30px_rgba(0,0,0,0.2)] backdrop-blur-[4.3px] w-[80vw] min-h-[70vh] grid grid-cols-3 juc items-center p-10 gap-6 mb-10 max-lg:grid-cols-1 max-lg:w-full max-lg:rounded-none max-lg:p-2 max-lg:h-full max-lg:gap-0"
         >
           {/* OPTIONS */}
           <div className="border border-rose-100 h-full p-6 gap-2 flex flex-col max-lg:mb-4">
+            {/* Gender Selection Buttons */}
+            <div className="grid grid-cols-2 gap-4 mb-4 w-full">
+              <button
+                className={`w-full px-4 py-2 rounded-lg font-bold border-2 ${
+                  gender === "male"
+                    ? "bg-blue-800 text-white border-blue-800"
+                    : "bg-white text-blue-800 border-blue-800"
+                }`}
+                onClick={() => setGender("male")}
+              >
+                Male
+              </button>
+              <button
+                className={`w-full px-4 py-2 rounded-lg font-bold border-2 ${
+                  gender === "female"
+                    ? "bg-pink-700 text-white border-pink-700"
+                    : "bg-white text-pink-700 border-pink-700"
+                }`}
+                onClick={() => setGender("female")}
+              >
+                Female
+              </button>
+            </div>
             <PartSelector
               selectedPart={selectedPart}
               setSelectedPart={setSelectedPart}
               selections={selections}
+              avatarParts={avatarParts}
             />
             <StyleSelector
               paddedStyles={paddedStyles}
@@ -262,12 +404,17 @@ function App() {
               styles={styles}
               setSelections={setSelections}
               selectedPart={selectedPart}
+              selections={selections}
             />
           </div>
           {/* CANVAS */}
           <div className="col-span-2 border border-rose-100 h-full flex flex-col justify-center items-center">
             <main className="w-full flex flex-col items-center justify-center m-auto h-full">
-              <AvatarCanvas selections={selections} avatarBg={avatarBg} />
+              <AvatarCanvas
+                selections={selections}
+                avatarBg={avatarBg}
+                avatarParts={avatarParts}
+              />
               <div className="flex flex-col items-center mt-4">
                 <label
                   htmlFor="avatar-bg"
