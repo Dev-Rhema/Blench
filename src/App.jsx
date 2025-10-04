@@ -181,7 +181,7 @@ function StyleSelector({
             background: style
               ? "radial-gradient(circle at 25% 25%, #fff 0%, #27272a 75%)"
               : "transparent",
-            opacity: style ? 1 : 0.08,
+            opacity: style ? 1 : 0.3,
             width: "100%",
             height: "100%",
             minWidth: "4rem",
