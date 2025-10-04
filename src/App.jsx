@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import avatarPartsMale from "./AvatarPartsMale";
 import avatarPartsFemale from "./AvatarPartsFemale";
 import { toPng } from "html-to-image";
@@ -59,18 +59,92 @@ function getCurrentSrc(part, selections, avatarParts) {
   return null;
 }
 
+// Utility to preload an array of image URLs
+function usePreloadImages(urls) {
+  const [loaded, setLoaded] = useState(false);
+  useEffect(() => {
+    if (!urls || urls.length === 0) {
+      setLoaded(true);
+      return;
+    }
+    let isMounted = true;
+    let loadedCount = 0;
+    urls.forEach((url) => {
+      const img = new window.Image();
+      img.onload = img.onerror = () => {
+        loadedCount++;
+        if (isMounted && loadedCount === urls.length) setLoaded(true);
+      };
+      img.src = url;
+    });
+    return () => {
+      isMounted = false;
+    };
+  }, [urls]);
+  return loaded;
+}
+
+// Spinner component
+function Spinner({ size = 32 }) {
+  return (
+    <div
+      className="flex items-center justify-center"
+      style={{ height: size, width: size }}
+    >
+      <svg
+        className="animate-spin"
+        style={{ width: size, height: size }}
+        viewBox="0 0 50 50"
+      >
+        <circle
+          className="opacity-25"
+          cx="25"
+          cy="25"
+          r="20"
+          fill="none"
+          stroke="#fff"
+          strokeWidth="5"
+        />
+        <path
+          className="opacity-75"
+          fill="#e11d48"
+          d="M25 5a20 20 0 0 1 20 20"
+        />
+      </svg>
+    </div>
+  );
+}
+
+function FadeInImage({ src, alt, className = "", style = {}, ...props }) {
+  const [loaded, setLoaded] = useState(false);
+  return (
+    <img
+      src={src}
+      alt={alt}
+      className={className}
+      style={{
+        ...style,
+        opacity: loaded ? 1 : 0,
+        transition: "opacity 0.5s cubic-bezier(0.4,0,0.2,1)",
+      }}
+      onLoad={() => setLoaded(true)}
+      {...props}
+    />
+  );
+}
+
 function PartSelector({
   selectedPart,
   setSelectedPart,
   selections,
   avatarParts,
 }) {
-  const PARTS = getParts(avatarParts);
+  const PARTS = Object.keys(avatarParts);
   return (
     <div className="w-full grid grid-cols-4 gap-4 justify-items-center">
       {PARTS.map((part) => (
         <div key={part} className="flex flex-col items-center">
-          <img
+          <FadeInImage
             src={getCurrentSrc(part, selections, avatarParts)}
             alt={part}
             className={`size-10 p-2 rounded-full cursor-pointer border ${
@@ -104,9 +178,10 @@ function StyleSelector({
             selectedStyleIdx === idx ? "ring-2 ring-rose-500" : ""
           }`}
           style={{
-            background:
-              "radial-gradient(circle at 25% 25%, #fff 0%, #27272a 75%)",
-            opacity: style ? 1 : 0.3,
+            background: style
+              ? "radial-gradient(circle at 25% 25%, #fff 0%, #27272a 75%)"
+              : "transparent",
+            opacity: style ? 1 : 0.08,
             width: "100%",
             height: "100%",
             minWidth: "4rem",
@@ -198,7 +273,7 @@ function ColorSelector({
   );
 }
 
-function AvatarCanvas({ selections, avatarBg, avatarParts }) {
+function AvatarCanvas({ selections, avatarBg, avatarParts, isRandomizing }) {
   // Define preferred rendering order
   const preferredOrder = [
     "shirt",
@@ -227,6 +302,17 @@ function AvatarCanvas({ selections, avatarBg, avatarParts }) {
     ...preferredOrder.filter((part) => PARTS.includes(part)),
     ...PARTS.filter((part) => !preferredOrder.includes(part)),
   ];
+  const avatarUrls = sortedParts
+    .map((part) => getCurrentSrc(part, selections, avatarParts))
+    .filter(Boolean);
+  const loaded = usePreloadImages(avatarUrls);
+  if (isRandomizing) {
+    return (
+      <div className="w-[300px] h-[300px] flex items-center justify-center">
+        <Spinner size={64} />
+      </div>
+    );
+  }
   return (
     <div
       className="w-[300px] h-[300px] relative"
@@ -239,7 +325,7 @@ function AvatarCanvas({ selections, avatarBg, avatarParts }) {
         const zIndex =
           zIndexMap[part] !== undefined ? zIndexMap[part] : 10 + idx;
         return (
-          <img
+          <FadeInImage
             key={part}
             src={src}
             alt={part}
@@ -260,6 +346,8 @@ function App() {
     getInitialSelections(avatarPartsMale)
   );
   const [avatarBg, setAvatarBg] = useState("#27272a");
+  const [isRandomizing, setIsRandomizing] = useState(false);
+  const [pendingRandomSelections, setPendingRandomSelections] = useState(null);
 
   // Update avatarParts and selections when gender changes
   React.useEffect(() => {
@@ -286,27 +374,69 @@ function App() {
       : styles;
 
   const randomizeSelections = () => {
-    const randomSelections = {};
-    Object.entries(avatarParts).forEach(([part, { styles }]) => {
-      const styleIdx = Math.floor(Math.random() * styles.length);
-      const colorKeys = Object.keys(styles[styleIdx].colors);
-      const color = colorKeys[Math.floor(Math.random() * colorKeys.length)];
-      randomSelections[part] = { styleIdx, color };
-    });
-    // Sync hand color to head color if possible
-    if (randomSelections.head && randomSelections.hands) {
-      const headColor = randomSelections.head.color;
-      const handStyleIdx = randomSelections.hands.styleIdx;
-      const handColors = avatarParts.hands.styles[handStyleIdx].colors;
-      if (handColors[headColor]) {
-        randomSelections.hands.color = headColor;
-      } else {
-        // fallback: pick first available hand color
-        randomSelections.hands.color = Object.keys(handColors)[0];
+    setIsRandomizing(true);
+    setPendingRandomSelections(null);
+    setTimeout(() => {
+      const randomSelections = {};
+      Object.entries(avatarParts).forEach(([part, { styles }]) => {
+        const styleIdx = Math.floor(Math.random() * styles.length);
+        const colorKeys = Object.keys(styles[styleIdx].colors);
+        const color = colorKeys[Math.floor(Math.random() * colorKeys.length)];
+        randomSelections[part] = { styleIdx, color };
+      });
+      // Sync hand color to head color if possible
+      if (randomSelections.head && randomSelections.hands) {
+        const headColor = randomSelections.head.color;
+        const handStyleIdx = randomSelections.hands.styleIdx;
+        const handColors = avatarParts.hands.styles[handStyleIdx].colors;
+        if (handColors[headColor]) {
+          randomSelections.hands.color = headColor;
+        } else {
+          randomSelections.hands.color = Object.keys(handColors)[0];
+        }
       }
-    }
-    setSelections(randomSelections);
+      setPendingRandomSelections({
+        selections: randomSelections,
+        bg: randomPastelColor(),
+      });
+    }, 600); // Simulate randomization delay
   };
+
+  // Wait for all images to load before showing avatar after randomize
+  useEffect(() => {
+    if (!pendingRandomSelections) return;
+    const PARTS = Object.keys(avatarParts);
+    const urls = PARTS.map((part) =>
+      getCurrentSrc(part, pendingRandomSelections.selections, avatarParts)
+    ).filter(Boolean);
+    let loadedCount = 0;
+    if (urls.length === 0) {
+      setSelections(pendingRandomSelections.selections);
+      setAvatarBg(pendingRandomSelections.bg);
+      setIsRandomizing(false);
+      setPendingRandomSelections(null);
+      return;
+    }
+    urls.forEach((url) => {
+      const img = new window.Image();
+      img.onload = img.onerror = () => {
+        loadedCount++;
+        if (loadedCount === urls.length) {
+          setSelections(pendingRandomSelections.selections);
+          setAvatarBg(pendingRandomSelections.bg);
+          setIsRandomizing(false);
+          setPendingRandomSelections(null);
+        }
+      };
+      img.src = url;
+    });
+  }, [pendingRandomSelections, avatarParts]);
+
+  // Utility to generate a random pastel color
+  function randomPastelColor() {
+    const hue = Math.floor(Math.random() * 360);
+    return `hsl(${hue}, 70%, 85%)`;
+  }
 
   const downloadAvatar = async () => {
     const avatarNode = document.getElementById("avatar-canvas");
@@ -361,7 +491,10 @@ function App() {
           className="rounded-2xl shadow-[0_4px_30px_rgba(0,0,0,0.2)] backdrop-blur-[4.3px] w-[80vw] min-h-[70vh] grid grid-cols-3 juc items-center p-10 gap-6 mb-10 max-lg:grid-cols-1 max-lg:w-full max-lg:rounded-none max-lg:p-2 max-lg:h-full max-lg:gap-0"
         >
           {/* OPTIONS */}
-          <div className="border border-rose-100 h-full p-6 gap-2 flex flex-col max-lg:mb-4">
+          <div
+            className="border border-rose-100 h-full p-6 gap-2 flex flex-col max-lg:mb-4"
+            style={{ background: "rgba(10,10,60,0.12)" }}
+          >
             {/* Gender Selection Buttons */}
             <div className="grid grid-cols-2 gap-4 mb-4 w-full">
               <button
@@ -414,6 +547,7 @@ function App() {
                 selections={selections}
                 avatarBg={avatarBg}
                 avatarParts={avatarParts}
+                isRandomizing={isRandomizing}
               />
               <div className="flex flex-col items-center mt-4">
                 <label
