@@ -229,47 +229,52 @@ function ColorSelector({
     filteredColors = colors.filter((c) => c === selections.head.color);
   }
   return (
-    <div className="grid grid-cols-4 gap-4 mt-2 justify-items-center">
-      {selectedStyleIdx >= 0 && filteredColors.length > 0
-        ? filteredColors.map((color) => (
-            <div
-              key={color}
-              className={`size-10 p-2 rounded-full cursor-pointer border flex items-center justify-center ${
-                selectedColor === color ? "ring-2 ring-rose-500" : ""
-              }`}
-              style={{
-                background:
-                  "radial-gradient(circle at 25% 25%, #fff 0%, #27272a 75%)",
-              }}
-              onClick={() =>
-                setSelections((prev) => ({
-                  ...prev,
-                  [selectedPart]: {
-                    ...prev[selectedPart],
-                    color,
-                  },
-                }))
-              }
-            >
-              <img
-                src={styles[selectedStyleIdx].colors[color]}
-                alt={color}
-                className="w-8 h-8 object-contain rounded-full"
+    <>
+      <div className="w-full flex justify-center mt-2">
+        <span className="text-md text-white font-semibold">Color Variants</span>
+      </div>
+      <div className="grid grid-cols-4 gap-4 mt-2 justify-items-center">
+        {selectedStyleIdx >= 0 && filteredColors.length > 0
+          ? filteredColors.map((color) => (
+              <div
+                key={color}
+                className={`size-10 p-2 rounded-full cursor-pointer border flex items-center justify-center ${
+                  selectedColor === color ? "ring-2 ring-rose-500" : ""
+                }`}
+                style={{
+                  background:
+                    "radial-gradient(circle at 25% 25%, #fff 0%, #27272a 75%)",
+                }}
+                onClick={() =>
+                  setSelections((prev) => ({
+                    ...prev,
+                    [selectedPart]: {
+                      ...prev[selectedPart],
+                      color,
+                    },
+                  }))
+                }
+              >
+                <img
+                  src={styles[selectedStyleIdx].colors[color]}
+                  alt={color}
+                  className="w-8 h-8 object-contain rounded-full"
+                />
+              </div>
+            ))
+          : [...Array(4)].map((_, idx) => (
+              <div
+                key={idx}
+                className="size-10 p-2 rounded-full border flex items-center justify-center"
+                style={{
+                  background:
+                    "radial-gradient(circle at 25% 25%, #fff 0%, #27272a 75%)",
+                  opacity: 0.3,
+                }}
               />
-            </div>
-          ))
-        : [...Array(4)].map((_, idx) => (
-            <div
-              key={idx}
-              className="size-10 p-2 rounded-full border flex items-center justify-center"
-              style={{
-                background:
-                  "radial-gradient(circle at 25% 25%, #fff 0%, #27272a 75%)",
-                opacity: 0.3,
-              }}
-            />
-          ))}
-    </div>
+            ))}
+      </div>
+    </>
   );
 }
 
