@@ -1,4 +1,5 @@
 import mapping from "../cloudinary-mapping.js";
+import Earring4 from "./Earring4.svg";
 
 const avatarPartsMale = {
   head: {
@@ -136,7 +137,7 @@ const avatarPartsMale = {
       {
         name: "earring4",
         colors: {
-          default: mapping["male/Earrings/Earring4.svg"],
+          default: Earring4,
         },
       },
     ],
