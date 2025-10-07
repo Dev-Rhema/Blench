@@ -3,6 +3,7 @@ import avatarPartsMale from "./AvatarPartsMale";
 import avatarPartsFemale from "./AvatarPartsFemale";
 import { toPng } from "html-to-image";
 import logo from "./logo.svg";
+import NewBleBg from "./NewBleBg.png";
 
 // Dynamically get all trait keys from avatarParts
 function getParts(avatarParts) {
@@ -482,7 +483,7 @@ function App() {
       <div
         className="flex flex-col items-center justify-center min-h-screen max-lg:h-full"
         style={{
-          backgroundImage: `url("https://res.cloudinary.com/dwzojroob/image/upload/v1759309914/your-folder-name/fxrujpiwnv6rwr89qxqx.jpg")`,
+          backgroundImage: `url(${NewBleBg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
