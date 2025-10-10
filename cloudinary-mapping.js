@@ -1,349 +1,293 @@
 // Auto-generated Cloudinary mapping. Do not edit manually.
 const cloudinaryMapping = {
-  "female/Earrings/Earring1.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599199/blench-assets/female/Earrings/wd469axg7pey63va0zwh.svg",
-  "female/Earrings/Earring2.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599201/blench-assets/female/Earrings/y8dfhmuslogv8mou7gdh.svg",
-  "female/Earrings/Earring3.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599203/blench-assets/female/Earrings/i7hzp03trg88vcv6rsgm.svg",
-  "female/Earrings/Earring4.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599204/blench-assets/female/Earrings/gmb0gmvutnicrpaesr4i.svg",
-  "female/FemaleEyes/FemaleEyeBlack.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599207/blench-assets/female/FemaleEyes/abpkkhae2pashhai8qmp.svg",
-  "female/FemaleEyes/FemaleEyeGreen.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599209/blench-assets/female/FemaleEyes/iijm4l0ao0phpgm40nzl.svg",
-  "female/FemaleEyes/FemaleEyeOrange.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599211/blench-assets/female/FemaleEyes/ayi41b8epfoadvttyoui.svg",
-  "female/FemaleEyes/FemaleEyePink.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599213/blench-assets/female/FemaleEyes/uftgg232apqyn7fsnkuf.svg",
-  "female/FemaleEyes/FemaleEyeRed.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599215/blench-assets/female/FemaleEyes/llhxzyemhfqqizasnogl.svg",
-  "female/FemaleHairs/FemaleHair1/FemaleHair1Blck.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599217/blench-assets/female/FemaleHairs/FemaleHair1/wcpnttnzj0djdiw8w1bo.svg",
-  "female/FemaleHairs/FemaleHair1/FemaleHair1Brown.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599219/blench-assets/female/FemaleHairs/FemaleHair1/bsdyy1tyeyxsjmledda1.svg",
-  "female/FemaleHairs/FemaleHair1/FemaleHair1Green.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599221/blench-assets/female/FemaleHairs/FemaleHair1/phsdw530x6oppmdqsd0y.svg",
-  "female/FemaleHairs/FemaleHair1/FemaleHair1Pink.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599224/blench-assets/female/FemaleHairs/FemaleHair1/vjibsqdbywulrtfgya0u.svg",
-  "female/FemaleHairs/FemaleHair1/FemaleHair1Purple.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599227/blench-assets/female/FemaleHairs/FemaleHair1/sxfqkx6kswd2m81abcgj.svg",
-  "female/FemaleHairs/FemaleHair1/FemaleHair1Red.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599229/blench-assets/female/FemaleHairs/FemaleHair1/mndagxoie3qwdaiilths.svg",
-  "female/FemaleHairs/FemaleHair1/FemaleHair1White.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599231/blench-assets/female/FemaleHairs/FemaleHair1/ebclqissi3lpovlg9gz4.svg",
-  "female/FemaleHairs/FemaleHair1/FemaleHair1Yellow.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599234/blench-assets/female/FemaleHairs/FemaleHair1/xy15fuom6svqbkdjfcoo.svg",
-  "female/FemaleHairs/FemaleHair2/FemaleHair2Black.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599236/blench-assets/female/FemaleHairs/FemaleHair2/e0ruhppmjkzwwex0a09d.svg",
-  "female/FemaleHairs/FemaleHair2/FemaleHair2Brown.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599238/blench-assets/female/FemaleHairs/FemaleHair2/dxaymxr0szfzf8zo6cp6.svg",
-  "female/FemaleHairs/FemaleHair2/FemaleHair2Green.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599241/blench-assets/female/FemaleHairs/FemaleHair2/k7uukxcbx1xlwabbx7ii.svg",
-  "female/FemaleHairs/FemaleHair2/FemaleHair2Pink.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599242/blench-assets/female/FemaleHairs/FemaleHair2/rja4vd6ushnnha45b3zn.svg",
-  "female/FemaleHairs/FemaleHair2/FemaleHair2Purple.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599245/blench-assets/female/FemaleHairs/FemaleHair2/huxnozcxe7infolqd4vf.svg",
-  "female/FemaleHairs/FemaleHair2/FemaleHair2Red.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599248/blench-assets/female/FemaleHairs/FemaleHair2/ahynstrxqftrsaugwnw0.svg",
-  "female/FemaleHairs/FemaleHair2/FemaleHair2White.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599251/blench-assets/female/FemaleHairs/FemaleHair2/kmoww3nyixvgaunbonpi.svg",
-  "female/FemaleHairs/FemaleHair2/FemaleHair2Yellow.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599254/blench-assets/female/FemaleHairs/FemaleHair2/wj0fnekthdjcbrvbnskb.svg",
-  "female/FemaleHairs/FemaleHair3/FemaleHair3Blonde.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599256/blench-assets/female/FemaleHairs/FemaleHair3/pwzt8voko4gtkpywbsek.svg",
-  "female/FemaleHairs/FemaleHair3/FemaleHair3Brown.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599258/blench-assets/female/FemaleHairs/FemaleHair3/nnkougcokynwqxrhjvkl.svg",
-  "female/FemaleHairs/FemaleHair3/FemaleHair3Green.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599260/blench-assets/female/FemaleHairs/FemaleHair3/mvyjhrekb2qmqqk7lu5p.svg",
-  "female/FemaleHairs/FemaleHair3/FemaleHair3Pink.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599262/blench-assets/female/FemaleHairs/FemaleHair3/q0qqskpftz5x8g3cnxty.svg",
-  "female/FemaleHairs/FemaleHair3/FemaleHair3Purple.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599264/blench-assets/female/FemaleHairs/FemaleHair3/y037ln64w0znheif2yxq.svg",
-  "female/FemaleHairs/FemaleHair3/FemaleHair3White.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599267/blench-assets/female/FemaleHairs/FemaleHair3/qqoxxo9rnefreckqmkk5.svg",
-  "female/FemaleHairs/FemaleHair4/FemaleHelmet1.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599269/blench-assets/female/FemaleHairs/FemaleHair4/j4cmewyvhnpfntbj7iqc.svg",
-  "female/FemaleHairs/FemaleHair4/FemaleHelmet2.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599273/blench-assets/female/FemaleHairs/FemaleHair4/kh18y4in9wnoahejlxbh.svg",
-  "female/FemaleHead/BlackFemale.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599275/blench-assets/female/FemaleHead/sbqtzyalh8tq6aqvistq.svg",
-  "female/FemaleHead/BrownFemale.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599278/blench-assets/female/FemaleHead/vrmc6xysbnnrogu87qla.svg",
-  "female/FemaleHead/LightFemale.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599280/blench-assets/female/FemaleHead/j6k180fijhjlbwfrinhf.svg",
-  "female/FemaleHead/WhiteFemale.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599283/blench-assets/female/FemaleHead/hqagkgzai0aneueuelde.svg",
-  "female/FemaleShirts/FemaleShirts1/FemaleShirt1Black.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599285/blench-assets/female/FemaleShirts/FemaleShirts1/jxven37dsnhqiajyc4vj.svg",
-  "female/FemaleShirts/FemaleShirts1/FemaleShirt1Blue.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599287/blench-assets/female/FemaleShirts/FemaleShirts1/drh5bgagyvllhcpk52g4.svg",
-  "female/FemaleShirts/FemaleShirts1/FemaleShirt1Pink.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599290/blench-assets/female/FemaleShirts/FemaleShirts1/gg1yf4ixv5bu7s5gednu.svg",
-  "female/FemaleShirts/FemaleShirts1/FemaleShirt1Purple.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599292/blench-assets/female/FemaleShirts/FemaleShirts1/hkm2jceafowcmr4vx7jr.svg",
-  "female/FemaleShirts/FemaleShirts1/FemaleShirt1White.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599294/blench-assets/female/FemaleShirts/FemaleShirts1/lhwitf3xrvfpgnvjmr21.svg",
-  "female/FemaleShirts/FemaleShirts1/FemaleShirt1Yellow.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599296/blench-assets/female/FemaleShirts/FemaleShirts1/y8ixmz7ijmknrsvsxovg.svg",
-  "female/FemaleShirts/FemaleShirts2/FemaleShirt2Blue.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599298/blench-assets/female/FemaleShirts/FemaleShirts2/osgwsxbnwhpnaz1bb9ox.svg",
-  "female/FemaleShirts/FemaleShirts2/FemaleShirt2Gray.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599300/blench-assets/female/FemaleShirts/FemaleShirts2/paynm167ezsna4jrbpdj.svg",
-  "female/FemaleShirts/FemaleShirts2/FemaleShirt2Green.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599303/blench-assets/female/FemaleShirts/FemaleShirts2/sg1z93pyvsqpbkhrbnyt.svg",
-  "female/FemaleShirts/FemaleShirts2/FemaleShirt2Pink.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599306/blench-assets/female/FemaleShirts/FemaleShirts2/kopyszhn2x5qel59vkag.svg",
-  "female/FemaleShirts/FemaleShirts2/FemaleShirt2White.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599308/blench-assets/female/FemaleShirts/FemaleShirts2/hixx0qlzgasjgpis0nvt.svg",
-  "female/FemaleShirts/FemaleShirts2/FemaleShirt2Yellow.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599311/blench-assets/female/FemaleShirts/FemaleShirts2/hjxjsadbryz0gta7xnuy.svg",
-  "female/FemaleShirts/FemaleShirts3/FemaleShirt3Blue.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599315/blench-assets/female/FemaleShirts/FemaleShirts3/ig9fw0s6kulak7dzauqv.svg",
-  "female/FemaleShirts/FemaleShirts3/FemaleShirt3Purple.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599319/blench-assets/female/FemaleShirts/FemaleShirts3/ioh21tifrwchzysz9pjr.svg",
-  "female/FemaleShirts/FemaleShirts3/FemaleShirt3Red.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599321/blench-assets/female/FemaleShirts/FemaleShirts3/mdtywascklorp6yn95la.svg",
-  "female/FemaleShirts/FemaleShirts3/FemaleShirt3Silver.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599323/blench-assets/female/FemaleShirts/FemaleShirts3/xtw3wkeble18wxudvelv.svg",
-  "female/FemaleShirts/FemaleShirts3/FemaleShirt3Yellow.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599325/blench-assets/female/FemaleShirts/FemaleShirts3/c43t1orjwhr2mfbdwh3o.svg",
-  "female/Hands/Hand1/Hand1Black.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599328/blench-assets/female/Hands/Hand1/iiwq7ch7t211rmbg4m0k.svg",
-  "female/Hands/Hand1/Hand1Brown.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599331/blench-assets/female/Hands/Hand1/jh5gscawezt4oxnqqk0n.svg",
-  "female/Hands/Hand1/Hand1Light.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599335/blench-assets/female/Hands/Hand1/jsirgsrtoheetqqbmetd.svg",
-  "female/Hands/Hand1/Hand1White.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599339/blench-assets/female/Hands/Hand1/gnbx2hcocsc7x6kt3tkr.svg",
-  "female/Hands/Hand2/Hand2Black.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599342/blench-assets/female/Hands/Hand2/drle48zimhvmnkw8ag1d.svg",
-  "female/Hands/Hand2/Hand2Brown.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599345/blench-assets/female/Hands/Hand2/nztg9mee3ek17t119jru.svg",
-  "female/Hands/Hand2/Hand2Light.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599346/blench-assets/female/Hands/Hand2/q9vymcmd0wpgxhclefsa.svg",
-  "female/Hands/Hand2/Hand2White.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599348/blench-assets/female/Hands/Hand2/c6grj3qnprdmydecowj2.svg",
-  "female/Hands/Hand3/Hand3Black.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599350/blench-assets/female/Hands/Hand3/ielxmqtkmxft0eptfg24.svg",
-  "female/Hands/Hand3/Hand3Brown.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599353/blench-assets/female/Hands/Hand3/dcg0hmhuosdalgimmrfa.svg",
-  "female/Hands/Hand3/Hand3Light.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599356/blench-assets/female/Hands/Hand3/cgs8i4ri5cr6qui4nsdh.svg",
-  "female/Hands/Hand3/Hand3White.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599358/blench-assets/female/Hands/Hand3/hqtxkcscwaiyeoeu48hk.svg",
-  "female/Hands/Hand4/Hand4Black.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599362/blench-assets/female/Hands/Hand4/z1vhhoejzzgmbs0zr3zl.svg",
-  "female/Hands/Hand4/Hand4Brown.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599364/blench-assets/female/Hands/Hand4/qtfec4uc5irw3po7z7qe.svg",
-  "female/Hands/Hand4/Hand4Light.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599366/blench-assets/female/Hands/Hand4/tvml8nf8ysc8kjzej5ud.svg",
-  "female/Hands/Hand4/Hand4White.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599368/blench-assets/female/Hands/Hand4/y2klkygcjtozpou6g9av.svg",
-  "female/Hands/Hand5/Hand5Black.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599369/blench-assets/female/Hands/Hand5/yvrsbj1wo6rkpwblqrzp.svg",
-  "female/Hands/Hand5/Hand5Brown.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599372/blench-assets/female/Hands/Hand5/x2i8pory6nrera2kzdkp.svg",
-  "female/Hands/Hand5/Hand5Light.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599374/blench-assets/female/Hands/Hand5/p07detwopcxcjgsyyehx.svg",
-  "female/Hands/Hand5/Hand5White.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599376/blench-assets/female/Hands/Hand5/n5mdu6afznxsgvscghre.svg",
-  "female/Tattoos/Tattoo1.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599378/blench-assets/female/Tattoos/xe7qevury2ru9ryjiwny.svg",
-  "female/Tattoos/Tattoo2.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599380/blench-assets/female/Tattoos/w1i70togyln9l2mz3mi5.svg",
-  "female/Tattoos/Tattoo3.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599382/blench-assets/female/Tattoos/ae3wexku8oivmnkkcrwu.svg",
-  "female/Tattoos/Tattoo4.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599384/blench-assets/female/Tattoos/zojsxk8azvwwjekabzzu.svg",
-  "female/Tattoos/Tattoo5.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599385/blench-assets/female/Tattoos/nuoa6upi2sq9ps6rhbj2.svg",
-  "female/Tattoos/Tattoo6.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599388/blench-assets/female/Tattoos/nqxpmsgtljp0buylwf06.svg",
-  "female/Tattoos/Tattoo7.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599390/blench-assets/female/Tattoos/zk5nkin3dcxvszm8rvd5.svg",
-  "female/Tattoos/Tattoo8.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599391/blench-assets/female/Tattoos/tge8jkxl42s7lfd0sn7n.svg",
-  "male/Earrings/Earring1.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599393/blench-assets/male/Earrings/bymeixd5jwlnmapiobds.svg",
-  "male/Earrings/Earring2.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599395/blench-assets/male/Earrings/is6izvdagf5go5xtdkcc.svg",
-  "male/Earrings/Earring3.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599397/blench-assets/male/Earrings/knxod5j3svhf7a2n2snu.svg",
-  "male/Earrings/Earring4.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599398/blench-assets/male/Earrings/gmt7mkdufsnxxnxbllue.svg",
-  "male/Hands/Hand1/Hand1Black.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599400/blench-assets/male/Hands/Hand1/ucdealiprijmbxovzrk4.svg",
-  "male/Hands/Hand1/Hand1Brown.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599404/blench-assets/male/Hands/Hand1/b3ug8mffk3kwrnylhtmk.svg",
-  "male/Hands/Hand1/Hand1Light.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599407/blench-assets/male/Hands/Hand1/owhvcep1ruhs9qqd37sl.svg",
-  "male/Hands/Hand1/Hand1White.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599411/blench-assets/male/Hands/Hand1/y5w0wlttvnqz8azdfqsf.svg",
-  "male/Hands/Hand2/Hand2Black.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599415/blench-assets/male/Hands/Hand2/eal1xhn7svk2uicu9ehs.svg",
-  "male/Hands/Hand2/Hand2Brown.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599418/blench-assets/male/Hands/Hand2/lfefpgwmq5z0kn7uv740.svg",
-  "male/Hands/Hand2/Hand2Light.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599420/blench-assets/male/Hands/Hand2/zct8mcwumdhe2hbnhsjk.svg",
-  "male/Hands/Hand2/Hand2White.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599424/blench-assets/male/Hands/Hand2/efxbjlmhowbtgwil6pds.svg",
-  "male/Hands/Hand3/Hand3Black.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599426/blench-assets/male/Hands/Hand3/naemltibdv52qszgjwiz.svg",
-  "male/Hands/Hand3/Hand3Brown.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599430/blench-assets/male/Hands/Hand3/qqzsrzaweesso1srsbyq.svg",
-  "male/Hands/Hand3/Hand3Light.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599432/blench-assets/male/Hands/Hand3/hkrwj86dxew9ulglpw11.svg",
-  "male/Hands/Hand3/Hand3White.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599436/blench-assets/male/Hands/Hand3/xixi73mkzwtfxe1olb8g.svg",
-  "male/Hands/Hand4/Hand4Black.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599439/blench-assets/male/Hands/Hand4/ix7qbuakdjtv3rz5zxm8.svg",
-  "male/Hands/Hand4/Hand4Brown.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599440/blench-assets/male/Hands/Hand4/tg5hfzqtnoimm4gdysof.svg",
-  "male/Hands/Hand4/Hand4Light.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599442/blench-assets/male/Hands/Hand4/oumfain8fb4nzeqr2qcl.svg",
-  "male/Hands/Hand4/Hand4White.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599444/blench-assets/male/Hands/Hand4/dfidfm1di6nig86kc0ex.svg",
-  "male/Hands/Hand5/Hand5Black.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599446/blench-assets/male/Hands/Hand5/pwns3ndoltl1ppucvhig.svg",
-  "male/Hands/Hand5/Hand5Brown.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599448/blench-assets/male/Hands/Hand5/yebnhrtgb1vfkcw3tqu7.svg",
-  "male/Hands/Hand5/Hand5Light.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599450/blench-assets/male/Hands/Hand5/gwriinqh85yqxpgahea6.svg",
-  "male/Hands/Hand5/Hand5White.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599452/blench-assets/male/Hands/Hand5/hf6zarmi8eyvkrea8mt5.svg",
-  "male/MaleEyes/MaleEyeBlack.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599454/blench-assets/male/MaleEyes/vltf7sc089dc1jf5fobb.svg",
-  "male/MaleEyes/MaleEyeBlue.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599456/blench-assets/male/MaleEyes/buun2ztuajpt3jialjuz.svg",
-  "male/MaleEyes/MaleEyeGreen.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599459/blench-assets/male/MaleEyes/kzysubbpgdlwxs304f2y.svg",
-  "male/MaleEyes/MaleEyeRed.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599461/blench-assets/male/MaleEyes/z1wvxq2orhwtjj3cax8m.svg",
-  "male/MaleEyes/MaleEyeYellow.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599463/blench-assets/male/MaleEyes/loir3hvl3lzxnztwzz1w.svg",
-  "male/MaleHairs/MaleHair1/Hair1Black.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599465/blench-assets/male/MaleHairs/MaleHair1/elmp1skhsizv5ilul1bp.svg",
-  "male/MaleHairs/MaleHair1/Hair1Blue.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599470/blench-assets/male/MaleHairs/MaleHair1/anvm6wrieoauz3nush3c.svg",
-  "male/MaleHairs/MaleHair1/Hair1Brown.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599476/blench-assets/male/MaleHairs/MaleHair1/fmkob28qcbncs7fjvzgg.svg",
-  "male/MaleHairs/MaleHair1/Hair1Green.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599481/blench-assets/male/MaleHairs/MaleHair1/nrpx8gqtwfnumtwttjq5.svg",
-  "male/MaleHairs/MaleHair1/Hair1Red.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599485/blench-assets/male/MaleHairs/MaleHair1/t6v75z1inxowkozok2he.svg",
-  "male/MaleHairs/MaleHair1/Hair1White.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599491/blench-assets/male/MaleHairs/MaleHair1/yi8lvpfujjjfay9bylyb.svg",
-  "male/MaleHairs/MaleHair1/Hair1Yellow.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599497/blench-assets/male/MaleHairs/MaleHair1/uf7cyrrtia9oapaohmwq.svg",
-  "male/MaleHairs/MaleHair2/hair2Black.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599503/blench-assets/male/MaleHairs/MaleHair2/km6z3bfubxfy8datjvdm.svg",
-  "male/MaleHairs/MaleHair2/hair2Blue.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599507/blench-assets/male/MaleHairs/MaleHair2/rc6msd4hscsfdbssgq27.svg",
-  "male/MaleHairs/MaleHair2/hair2Brown.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599510/blench-assets/male/MaleHairs/MaleHair2/mb13z0zmenvqdxmgrrbq.svg",
-  "male/MaleHairs/MaleHair2/hair2Green.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599513/blench-assets/male/MaleHairs/MaleHair2/vdyz1wjgy3vqbbwowfa2.svg",
-  "male/MaleHairs/MaleHair2/hair2Red.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599516/blench-assets/male/MaleHairs/MaleHair2/fghsw2wc9njrfai87x8a.svg",
-  "male/MaleHairs/MaleHair2/hair2White.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599521/blench-assets/male/MaleHairs/MaleHair2/arqzbhyc4yyeofqkb9zt.svg",
-  "male/MaleHairs/MaleHair2/hair2Yellow.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599525/blench-assets/male/MaleHairs/MaleHair2/ejdvljcp2rfx46zexuro.svg",
-  "male/MaleHairs/MaleHair3/Hair3Black.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599528/blench-assets/male/MaleHairs/MaleHair3/evte6l6atiowgyejogij.svg",
-  "male/MaleHairs/MaleHair3/Hair3Blue.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599530/blench-assets/male/MaleHairs/MaleHair3/haqxfayieenhhfxevsvy.svg",
-  "male/MaleHairs/MaleHair3/Hair3Brown.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599533/blench-assets/male/MaleHairs/MaleHair3/lfaft7jf9qhbgek5es0s.svg",
-  "male/MaleHairs/MaleHair3/Hair3Green.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599534/blench-assets/male/MaleHairs/MaleHair3/wcbj2aifelwwmpzpzkl1.svg",
-  "male/MaleHairs/MaleHair3/Hair3Red.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599536/blench-assets/male/MaleHairs/MaleHair3/yme4dt38oo7yqx1p6hws.svg",
-  "male/MaleHairs/MaleHair3/Hair3White.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599538/blench-assets/male/MaleHairs/MaleHair3/p5joq0groaojwqfb22l2.svg",
-  "male/MaleHairs/MaleHair3/Hair3Yellow.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599541/blench-assets/male/MaleHairs/MaleHair3/diwyqikoegbvktggwmrs.svg",
-  "male/MaleHairs/MaleHair4/Hair4Black.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599543/blench-assets/male/MaleHairs/MaleHair4/ybn5kr6gwjtzotyoug2z.svg",
-  "male/MaleHairs/MaleHair4/Hair4Blue.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599545/blench-assets/male/MaleHairs/MaleHair4/epzeq9ccvqllsaikeon8.svg",
-  "male/MaleHairs/MaleHair4/Hair4Brown.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599547/blench-assets/male/MaleHairs/MaleHair4/mj9uoupmwvmna2iumzuv.svg",
-  "male/MaleHairs/MaleHair4/Hair4Green.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599549/blench-assets/male/MaleHairs/MaleHair4/qtlznf7ujeeqoltnyuvz.svg",
-  "male/MaleHairs/MaleHair4/Hair4Red.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599551/blench-assets/male/MaleHairs/MaleHair4/ssxvrcyuchiggpkb0zjq.svg",
-  "male/MaleHairs/MaleHair4/Hair4White.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599553/blench-assets/male/MaleHairs/MaleHair4/tmk2of1cnausqd1jhyba.svg",
-  "male/MaleHairs/MaleHair4/Hair4Yellow.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599555/blench-assets/male/MaleHairs/MaleHair4/nhlzraiwixoqhptqge8u.svg",
-  "male/MaleHead/BlackMale.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599557/blench-assets/male/MaleHead/efyuwgtohlov7thvd9p3.svg",
-  "male/MaleHead/BrownMale.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599560/blench-assets/male/MaleHead/h4qaqwhmhf8cjruab9b0.svg",
-  "male/MaleHead/LightMale.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599562/blench-assets/male/MaleHead/cnmohso6ub6ipakn9daj.svg",
-  "male/MaleHead/WhiteMale.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599563/blench-assets/male/MaleHead/esirwbt5huqveot1q21o.svg",
-  "male/MaleShirts/MaleShirts1/MaleShirt1Black.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599566/blench-assets/male/MaleShirts/MaleShirts1/rojhe9h5blpkbc2wroji.svg",
-  "male/MaleShirts/MaleShirts1/MaleShirt1Blue.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599568/blench-assets/male/MaleShirts/MaleShirts1/mlx5cx3afuhi2rknnvx0.svg",
-  "male/MaleShirts/MaleShirts1/MaleShirt1Brown.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599570/blench-assets/male/MaleShirts/MaleShirts1/uxb2txkhb8mpzmu34slm.svg",
-  "male/MaleShirts/MaleShirts1/MaleShirt1Green.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599572/blench-assets/male/MaleShirts/MaleShirts1/oo9u6fixps1cs3b80pt9.svg",
-  "male/MaleShirts/MaleShirts1/MaleShirt1Red.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599575/blench-assets/male/MaleShirts/MaleShirts1/rsazbvr3kspk6ij8lla6.svg",
-  "male/MaleShirts/MaleShirts1/MaleShirt1White.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599577/blench-assets/male/MaleShirts/MaleShirts1/up2tirjr45lxtic8ykqx.svg",
-  "male/MaleShirts/MaleShirts1/MaleShirt1Yellow.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599579/blench-assets/male/MaleShirts/MaleShirts1/ydmkyumvfhnxcb2rgx8e.svg",
-  "male/MaleShirts/MaleShirts2/MaleShirt2Black.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599581/blench-assets/male/MaleShirts/MaleShirts2/srfhkaxqfnnab0v1mmqa.svg",
-  "male/MaleShirts/MaleShirts2/MaleShirt2Blue.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599586/blench-assets/male/MaleShirts/MaleShirts2/hmbfulbrhlad12ntlj5v.svg",
-  "male/MaleShirts/MaleShirts2/MaleShirt2Brown.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599591/blench-assets/male/MaleShirts/MaleShirts2/jnvk88tdz2ixgibzq29o.svg",
-  "male/MaleShirts/MaleShirts2/MaleShirt2Green.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599596/blench-assets/male/MaleShirts/MaleShirts2/mr6i0jssc7e1le9ud21i.svg",
-  "male/MaleShirts/MaleShirts2/MaleShirt2Red.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599600/blench-assets/male/MaleShirts/MaleShirts2/jw750ztfejlzppy8zzbo.svg",
-  "male/MaleShirts/MaleShirts2/MaleShirt2White.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599606/blench-assets/male/MaleShirts/MaleShirts2/pjfovqzwc2a4r9fbgpj1.svg",
-  "male/MaleShirts/MaleShirts2/MaleShirt2Yellow.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599611/blench-assets/male/MaleShirts/MaleShirts2/wdwx4sixzf3plvfiigkt.svg",
-  "male/MaleShirts/MaleShirts3/MaleShirt3Black.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599616/blench-assets/male/MaleShirts/MaleShirts3/ceizpdtu3qsklujgzjvi.svg",
-  "male/MaleShirts/MaleShirts3/MaleShirt3Blue.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599620/blench-assets/male/MaleShirts/MaleShirts3/dcizzy1i5bdactmctjbm.svg",
-  "male/MaleShirts/MaleShirts3/MaleShirt3Brown.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599623/blench-assets/male/MaleShirts/MaleShirts3/ybqoekjp5hj0sstheoqe.svg",
-  "male/MaleShirts/MaleShirts3/MaleShirt3Green.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599627/blench-assets/male/MaleShirts/MaleShirts3/pzhoxk3wr5a61msaltmm.svg",
-  "male/MaleShirts/MaleShirts3/MaleShirt3Red.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599630/blench-assets/male/MaleShirts/MaleShirts3/wrmirfif8uzw74zflh4t.svg",
-  "male/MaleShirts/MaleShirts3/MaleShirt3White.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599634/blench-assets/male/MaleShirts/MaleShirts3/fqwshzeqwroioizav4m0.svg",
-  "male/MaleShirts/MaleShirts3/MaleShirt3Yellow.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599637/blench-assets/male/MaleShirts/MaleShirts3/koj4zsofoz2tevsltl0j.svg",
-  "male/Tattoos/Tattoo1.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599641/blench-assets/male/Tattoos/ovl8ezjwtmmwxdka9akn.svg",
-  "male/Tattoos/Tattoo2.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599642/blench-assets/male/Tattoos/kkhao29my1biedukgv2v.svg",
-  "male/Tattoos/Tattoo3.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599644/blench-assets/male/Tattoos/pk1v21ihzhahaky1k8ky.svg",
-  "male/Tattoos/Tattoo4.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599646/blench-assets/male/Tattoos/hc77edia2rjrkg3almdu.svg",
-  "male/Tattoos/Tattoo5.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599648/blench-assets/male/Tattoos/yhpy8bxkayvwejbevjnv.svg",
-  "male/Tattoos/Tattoo6.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599650/blench-assets/male/Tattoos/kowxx7w9pftbbrqlxfcs.svg",
-  "male/Tattoos/Tattoo7.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599652/blench-assets/male/Tattoos/m6sjveweihgonjrjgwrf.svg",
-  "male/Tattoos/Tattoo8.svg":
-    "https://res.cloudinary.com/dwzojroob/image/upload/v1759599654/blench-assets/male/Tattoos/ybrcojwzzi2lgt7cdffg.svg",
+  "female/Earrings/Earring1.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102248/blench-assets/female/Earrings/pynzdsdxjellvssbadew.svg",
+  "female/Earrings/Earring2.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102251/blench-assets/female/Earrings/ettar4180ntklfhyyhr4.svg",
+  "female/Earrings/Earring3.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102254/blench-assets/female/Earrings/cwbtz4pxskk6snxsmcu1.svg",
+  "female/Earrings/Earring4.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102256/blench-assets/female/Earrings/xbh0txic1ckd7ce7chfw.svg",
+  "female/FemaleEyes/FemaleEyeBlack.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102260/blench-assets/female/FemaleEyes/hatixcdcyc7vf4aa9n2o.svg",
+  "female/FemaleEyes/FemaleEyeGreen.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102264/blench-assets/female/FemaleEyes/bhywnox9l2nqabtkxdfp.svg",
+  "female/FemaleEyes/FemaleEyeOrange.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102267/blench-assets/female/FemaleEyes/lcf7in3vla8lotawi170.svg",
+  "female/FemaleEyes/FemaleEyePink.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102271/blench-assets/female/FemaleEyes/tqihk7qn6r4plnjixscp.svg",
+  "female/FemaleEyes/FemaleEyeRed.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102276/blench-assets/female/FemaleEyes/cg2aktw9hofzkc3hsqxd.svg",
+  "female/FemaleHairs/FemaleHair1/FemaleHair1Blck.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102280/blench-assets/female/FemaleHairs/FemaleHair1/s0ohpmvqcveoatuj8ja6.svg",
+  "female/FemaleHairs/FemaleHair1/FemaleHair1Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102283/blench-assets/female/FemaleHairs/FemaleHair1/aer3pofmdu4lg9lh8iuc.svg",
+  "female/FemaleHairs/FemaleHair1/FemaleHair1Green.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102286/blench-assets/female/FemaleHairs/FemaleHair1/ri4zdrwtbztwgybngend.svg",
+  "female/FemaleHairs/FemaleHair1/FemaleHair1Pink.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102290/blench-assets/female/FemaleHairs/FemaleHair1/zbmc3mcgxjndd8cj7hdd.svg",
+  "female/FemaleHairs/FemaleHair1/FemaleHair1Purple.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102295/blench-assets/female/FemaleHairs/FemaleHair1/hjygci2vsxhbvt3xncla.svg",
+  "female/FemaleHairs/FemaleHair1/FemaleHair1Red.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102299/blench-assets/female/FemaleHairs/FemaleHair1/xwoc7oisvuny9qgykk0u.svg",
+  "female/FemaleHairs/FemaleHair1/FemaleHair1White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102302/blench-assets/female/FemaleHairs/FemaleHair1/we7otq1goqdg8fnpchmr.svg",
+  "female/FemaleHairs/FemaleHair1/FemaleHair1Yellow.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102305/blench-assets/female/FemaleHairs/FemaleHair1/nugkwbbn9h5iyq69llzr.svg",
+  "female/FemaleHairs/FemaleHair2/FemaleHair2Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102308/blench-assets/female/FemaleHairs/FemaleHair2/vdrm4ddni2dv4qhsoeol.svg",
+  "female/FemaleHairs/FemaleHair2/FemaleHair2Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102311/blench-assets/female/FemaleHairs/FemaleHair2/n9ecbo4mflq4hgmynamg.svg",
+  "female/FemaleHairs/FemaleHair2/FemaleHair2Green.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102315/blench-assets/female/FemaleHairs/FemaleHair2/xc085jyqqzf7kvbwc4hm.svg",
+  "female/FemaleHairs/FemaleHair2/FemaleHair2Pink.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102318/blench-assets/female/FemaleHairs/FemaleHair2/ouodfr0tf4a5je3mmunl.svg",
+  "female/FemaleHairs/FemaleHair2/FemaleHair2Purple.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102321/blench-assets/female/FemaleHairs/FemaleHair2/busthaljexqpnonzrncy.svg",
+  "female/FemaleHairs/FemaleHair2/FemaleHair2Red.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102326/blench-assets/female/FemaleHairs/FemaleHair2/z4ymrnz0gar6adcekxcq.svg",
+  "female/FemaleHairs/FemaleHair2/FemaleHair2White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102328/blench-assets/female/FemaleHairs/FemaleHair2/f2n7kdvtivj6akuaapnn.svg",
+  "female/FemaleHairs/FemaleHair2/FemaleHair2Yellow.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102332/blench-assets/female/FemaleHairs/FemaleHair2/kvbdea7lndfhpzcpvurn.svg",
+  "female/FemaleHairs/FemaleHair3/FemaleHair3Blonde.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102335/blench-assets/female/FemaleHairs/FemaleHair3/kkvvphearpqwevofvkg3.svg",
+  "female/FemaleHairs/FemaleHair3/FemaleHair3Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102338/blench-assets/female/FemaleHairs/FemaleHair3/ffsazhvtneteedatkgnk.svg",
+  "female/FemaleHairs/FemaleHair3/FemaleHair3Green.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102342/blench-assets/female/FemaleHairs/FemaleHair3/z0pqnv1yh0dns6u6vfbq.svg",
+  "female/FemaleHairs/FemaleHair3/FemaleHair3Pink.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102344/blench-assets/female/FemaleHairs/FemaleHair3/c7mhok99n23oluhh8nfa.svg",
+  "female/FemaleHairs/FemaleHair3/FemaleHair3Purple.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102348/blench-assets/female/FemaleHairs/FemaleHair3/su44fvagttykaa4glunn.svg",
+  "female/FemaleHairs/FemaleHair3/FemaleHair3White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102351/blench-assets/female/FemaleHairs/FemaleHair3/hiwwxbr4gtfvsl47enuj.svg",
+  "female/FemaleHairs/FemaleHair4/FemaleHelmet1.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102357/blench-assets/female/FemaleHairs/FemaleHair4/lsx5oge6xbsscrz3vccu.svg",
+  "female/FemaleHairs/FemaleHair4/FemaleHelmet2.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102362/blench-assets/female/FemaleHairs/FemaleHair4/yarafefqwm3ndrro5mrg.svg",
+  "female/FemaleHairs/FemaleHair5/FemaleHair5Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102367/blench-assets/female/FemaleHairs/FemaleHair5/xt0fepvgykthb4ip7vkm.svg",
+  "female/FemaleHairs/FemaleHair5/FemaleHair5Green.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102371/blench-assets/female/FemaleHairs/FemaleHair5/kuolfwr2apovjpcagtfw.svg",
+  "female/FemaleHairs/FemaleHair5/FemaleHair5Pink.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102376/blench-assets/female/FemaleHairs/FemaleHair5/nmmz1vgs1il5a2o61hzx.svg",
+  "female/FemaleHairs/FemaleHair5/FemaleHair5Purple.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102380/blench-assets/female/FemaleHairs/FemaleHair5/wfr6xokqnhcthix7twvn.svg",
+  "female/FemaleHairs/FemaleHair5/FemaleHair5Red.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102383/blench-assets/female/FemaleHairs/FemaleHair5/kpjyvzuz9rydmzbsbbvu.svg",
+  "female/FemaleHairs/FemaleHair5/FemaleHair5Yellow.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102386/blench-assets/female/FemaleHairs/FemaleHair5/dqd6ud1521wd3sqyooga.svg",
+  "female/FemaleHead/BlackFemale.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102390/blench-assets/female/FemaleHead/svjbc9hnni7r8irwercv.svg",
+  "female/FemaleHead/BrownFemale.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102393/blench-assets/female/FemaleHead/tfjuiccaazwnkiuwmrk7.svg",
+  "female/FemaleHead/LightFemale.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102396/blench-assets/female/FemaleHead/zyqkum0rn4nqpyviiaum.svg",
+  "female/FemaleHead/WhiteFemale.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102400/blench-assets/female/FemaleHead/vxoyikeawfs7mhoa9x8l.svg",
+  "female/FemaleHeadGear/FemaleHeadGear1.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102404/blench-assets/female/FemaleHeadGear/ixpw2f9hb2byktckuoad.svg",
+  "female/FemaleHeadGear/FemaleHeadGear2.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102410/blench-assets/female/FemaleHeadGear/oyeg4xfyavkcrryr7l0y.svg",
+  "female/FemaleHeadGear/FemaleHeadGear3.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102418/blench-assets/female/FemaleHeadGear/rbf2b4kdyenfogv7tf3m.svg",
+  "female/FemaleHeadGear/FemaleHeadGear4.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102424/blench-assets/female/FemaleHeadGear/y43ciu0nh1scrjd2ev6d.svg",
+  "female/FemaleHeadGear/FemaleHeadGear5.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102431/blench-assets/female/FemaleHeadGear/wemtivachskbw7wjuhzq.svg",
+  "female/FemaleHeadGear/FemaleHeadGear6.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102436/blench-assets/female/FemaleHeadGear/gutnwgrub1mtxatkargr.svg",
+  "female/FemaleShirts/FemaleShirts1/FemaleShirt1Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102439/blench-assets/female/FemaleShirts/FemaleShirts1/jk91v2v1xzm6syzkdct8.svg",
+  "female/FemaleShirts/FemaleShirts1/FemaleShirt1Blue.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102443/blench-assets/female/FemaleShirts/FemaleShirts1/jszqk1ndysm0rnhpalaz.svg",
+  "female/FemaleShirts/FemaleShirts1/FemaleShirt1Pink.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102446/blench-assets/female/FemaleShirts/FemaleShirts1/vjbt6dhdfytepmro7wl4.svg",
+  "female/FemaleShirts/FemaleShirts1/FemaleShirt1Purple.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102449/blench-assets/female/FemaleShirts/FemaleShirts1/qkaam9geqfn2fam1e744.svg",
+  "female/FemaleShirts/FemaleShirts1/FemaleShirt1White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102452/blench-assets/female/FemaleShirts/FemaleShirts1/fzvsgqatzmyxcebm9gqd.svg",
+  "female/FemaleShirts/FemaleShirts1/FemaleShirt1Yellow.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102456/blench-assets/female/FemaleShirts/FemaleShirts1/fmz2sitz1etmxm7jkrtf.svg",
+  "female/FemaleShirts/FemaleShirts2/FemaleShirt2Blue.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102460/blench-assets/female/FemaleShirts/FemaleShirts2/jwehyitwfdf4ziu6zp4k.svg",
+  "female/FemaleShirts/FemaleShirts2/FemaleShirt2Gray.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102464/blench-assets/female/FemaleShirts/FemaleShirts2/switedorg9jif436bbxs.svg",
+  "female/FemaleShirts/FemaleShirts2/FemaleShirt2Green.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102469/blench-assets/female/FemaleShirts/FemaleShirts2/eopfi2y51q0cvvbk4mea.svg",
+  "female/FemaleShirts/FemaleShirts2/FemaleShirt2Pink.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102473/blench-assets/female/FemaleShirts/FemaleShirts2/ikvhgfzt8o3mdl1untu4.svg",
+  "female/FemaleShirts/FemaleShirts2/FemaleShirt2White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102478/blench-assets/female/FemaleShirts/FemaleShirts2/psthv0xed09gm1vsljnd.svg",
+  "female/FemaleShirts/FemaleShirts2/FemaleShirt2Yellow.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102483/blench-assets/female/FemaleShirts/FemaleShirts2/j8gagpmjwpjawxi9axgg.svg",
+  "female/FemaleShirts/FemaleShirts3/FemaleShirt3Blue.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102487/blench-assets/female/FemaleShirts/FemaleShirts3/xbvtxodj88sgwpblcm5r.svg",
+  "female/FemaleShirts/FemaleShirts3/FemaleShirt3Purple.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102490/blench-assets/female/FemaleShirts/FemaleShirts3/lkraxins3hajsl2mphgr.svg",
+  "female/FemaleShirts/FemaleShirts3/FemaleShirt3Red.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102493/blench-assets/female/FemaleShirts/FemaleShirts3/usjofz66mtawlicn3cbs.svg",
+  "female/FemaleShirts/FemaleShirts3/FemaleShirt3Silver.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102496/blench-assets/female/FemaleShirts/FemaleShirts3/jt3eugmfzgx44uf2g0ln.svg",
+  "female/FemaleShirts/FemaleShirts3/FemaleShirt3Yellow.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102499/blench-assets/female/FemaleShirts/FemaleShirts3/p8sple38czohlleyqs3f.svg",
+  "female/FemaleShirts/FemaleShirts4/FemaleShirt4Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102502/blench-assets/female/FemaleShirts/FemaleShirts4/r7yieumtko4nct2u5fce.svg",
+  "female/FemaleShirts/FemaleShirts4/FemaleShirt4Green.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102505/blench-assets/female/FemaleShirts/FemaleShirts4/rxmufbt9avsrixoao08e.svg",
+  "female/FemaleShirts/FemaleShirts4/FemaleShirt4Pink.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102508/blench-assets/female/FemaleShirts/FemaleShirts4/bnkpkqjh9fbamo3bvbig.svg",
+  "female/FemaleShirts/FemaleShirts4/FemaleShirt4Purple.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102511/blench-assets/female/FemaleShirts/FemaleShirts4/c3tmdptmdfl23mvbcjg8.svg",
+  "female/FemaleShirts/FemaleShirts4/FemaleShirt4White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102514/blench-assets/female/FemaleShirts/FemaleShirts4/n28hmdkby87ahisabqvz.svg",
+  "female/FemaleShirts/FemaleShirts5/FemaleShirt5.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102518/blench-assets/female/FemaleShirts/FemaleShirts5/idlxi9nxb8jp8yj4spj6.svg",
+  "female/FemaleShirts/FemaleShirts6/FemaleShirt6.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102524/blench-assets/female/FemaleShirts/FemaleShirts6/ywlxhjhnsroeekj4lm6a.svg",
+  "female/FemaleShirts/FemaleShirts7/FemaleShirt7.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102529/blench-assets/female/FemaleShirts/FemaleShirts7/ye13fxzlnf74op6fxdjn.svg",
+  "female/FemaleShirts/FemaleShirts8/FemaleShirt8.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102534/blench-assets/female/FemaleShirts/FemaleShirts8/ghttll2pbypdlv1ys4uq.svg",
+  "female/FemaleShirts/FemaleShirts9/FemaleShirt9.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102539/blench-assets/female/FemaleShirts/FemaleShirts9/rnrsv1uduivolslozxfp.svg",
+  "female/Hands/Hand1/Hand1Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102543/blench-assets/female/Hands/Hand1/ktrhoy38enxiczkvbnev.svg",
+  "female/Hands/Hand1/Hand1Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102547/blench-assets/female/Hands/Hand1/voixjwqmtuasyyhs5v3r.svg",
+  "female/Hands/Hand1/Hand1Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102552/blench-assets/female/Hands/Hand1/tzj12m5nomn2007cpdnr.svg",
+  "female/Hands/Hand1/Hand1White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102557/blench-assets/female/Hands/Hand1/lyaop75l5qa3a3reaixl.svg",
+  "female/Hands/Hand10/Hand10Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102562/blench-assets/female/Hands/Hand10/k7wquuzs8gfffdwqygd6.svg",
+  "female/Hands/Hand10/Hand10Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102567/blench-assets/female/Hands/Hand10/vjvz96utb27ro9mxihop.svg",
+  "female/Hands/Hand10/Hand10Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102572/blench-assets/female/Hands/Hand10/srat8j80ur6gamqusl0j.svg",
+  "female/Hands/Hand10/Hand10White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102577/blench-assets/female/Hands/Hand10/lkzitxvt81b2qtnqrzod.svg",
+  "female/Hands/Hand11/Hand11Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102581/blench-assets/female/Hands/Hand11/vqyzksgxrfvpcamv69x1.svg",
+  "female/Hands/Hand11/Hand11Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102585/blench-assets/female/Hands/Hand11/tihja5lzygpfuhjn1bwx.svg",
+  "female/Hands/Hand11/Hand11Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102588/blench-assets/female/Hands/Hand11/fwlsrx6jsziw4wdfuz25.svg",
+  "female/Hands/Hand11/Hand11White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102591/blench-assets/female/Hands/Hand11/gjobklijdvsrbbexotea.svg",
+  "female/Hands/Hand12/Hand12Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102595/blench-assets/female/Hands/Hand12/uk0mzzqsqxkthgnb73zt.svg",
+  "female/Hands/Hand12/Hand12Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102600/blench-assets/female/Hands/Hand12/ntzhlhsnjpitukplphmi.svg",
+  "female/Hands/Hand12/Hand12Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102604/blench-assets/female/Hands/Hand12/rj6smxoe82xp3xu43esh.svg",
+  "female/Hands/Hand12/Hand12White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102608/blench-assets/female/Hands/Hand12/t2wcwoqbninlpbl3vuvl.svg",
+  "female/Hands/Hand13/Hand13Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102613/blench-assets/female/Hands/Hand13/k2oxallek1onirk44hp8.svg",
+  "female/Hands/Hand13/Hand13Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102617/blench-assets/female/Hands/Hand13/k97vy5mqvvlivibtakqt.svg",
+  "female/Hands/Hand13/Hand13Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102622/blench-assets/female/Hands/Hand13/y2g4dvqykwxpvopq01uo.svg",
+  "female/Hands/Hand13/Hand13White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102627/blench-assets/female/Hands/Hand13/gcaoztgemnenz6qarcn9.svg",
+  "female/Hands/Hand2/Hand2Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102632/blench-assets/female/Hands/Hand2/ljogkmjsczjbpivgb5ud.svg",
+  "female/Hands/Hand2/Hand2Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102635/blench-assets/female/Hands/Hand2/bxqdrob4ix2kllqbtwx0.svg",
+  "female/Hands/Hand2/Hand2Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102639/blench-assets/female/Hands/Hand2/vowwnx2yoqvv5vmlfxux.svg",
+  "female/Hands/Hand2/Hand2White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102642/blench-assets/female/Hands/Hand2/nqc1lk3wy6ukwrgr0fps.svg",
+  "female/Hands/Hand3/Hand3Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102647/blench-assets/female/Hands/Hand3/jrszitni6qryayf68qwh.svg",
+  "female/Hands/Hand3/Hand3Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102651/blench-assets/female/Hands/Hand3/hnuyhchrhxnug6arbjw5.svg",
+  "female/Hands/Hand3/Hand3Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102655/blench-assets/female/Hands/Hand3/yoiohsnqa56c7dvrko3e.svg",
+  "female/Hands/Hand3/Hand3White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102659/blench-assets/female/Hands/Hand3/tyc3eqvepwjxom8ad3pv.svg",
+  "female/Hands/Hand4/Hand4Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102663/blench-assets/female/Hands/Hand4/ncysroldln6hftfs0s5t.svg",
+  "female/Hands/Hand4/Hand4Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102666/blench-assets/female/Hands/Hand4/jow2wklihxmxkdpgpoth.svg",
+  "female/Hands/Hand4/Hand4Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102668/blench-assets/female/Hands/Hand4/bylgklafiwshqta2ffzg.svg",
+  "female/Hands/Hand4/Hand4White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102671/blench-assets/female/Hands/Hand4/i5iglt4cxoyoffaimst9.svg",
+  "female/Hands/Hand5/Hand5Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102674/blench-assets/female/Hands/Hand5/x1zdkn0laoxtz8qjxs8s.svg",
+  "female/Hands/Hand5/Hand5Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102677/blench-assets/female/Hands/Hand5/gctiiw4u90fawbmy05lk.svg",
+  "female/Hands/Hand5/Hand5Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102680/blench-assets/female/Hands/Hand5/ivncsi30kbnaog51d3up.svg",
+  "female/Hands/Hand5/Hand5White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102683/blench-assets/female/Hands/Hand5/lcri8xvmls8pq7nvojyi.svg",
+  "female/Hands/Hand6/Hand6Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102687/blench-assets/female/Hands/Hand6/wb4txfnrvy1qbwahkhlw.svg",
+  "female/Hands/Hand6/Hand6Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102692/blench-assets/female/Hands/Hand6/nki8tpcggwvcdhaiymtt.svg",
+  "female/Hands/Hand6/Hand6Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102696/blench-assets/female/Hands/Hand6/fdirfp7o3mvbiu3y6ojb.svg",
+  "female/Hands/Hand6/Hand6White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102701/blench-assets/female/Hands/Hand6/airejzqlwlqvtn9e3jow.svg",
+  "female/Hands/Hand7/Hand7Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102705/blench-assets/female/Hands/Hand7/klar1lzoywatclgnc8az.svg",
+  "female/Hands/Hand7/Hand7Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102708/blench-assets/female/Hands/Hand7/twujdbypordtrqvvgro0.svg",
+  "female/Hands/Hand7/Hand7Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102711/blench-assets/female/Hands/Hand7/rxlhzvhla0jy28ujy5zr.svg",
+  "female/Hands/Hand7/Hand7White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102715/blench-assets/female/Hands/Hand7/rbel4dtlajlfbvarxr4h.svg",
+  "female/Hands/Hand8/Hand8Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102719/blench-assets/female/Hands/Hand8/wvvcqxwtwotalyvhrlif.svg",
+  "female/Hands/Hand8/Hand8Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102724/blench-assets/female/Hands/Hand8/ia9nawgo5ivw0zxemprc.svg",
+  "female/Hands/Hand8/Hand8Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102729/blench-assets/female/Hands/Hand8/yi4p6dvxtiulz0xko99g.svg",
+  "female/Hands/Hand8/Hand8White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102733/blench-assets/female/Hands/Hand8/tuwcum5a9zlyrzewqbmw.svg",
+  "female/Hands/Hand9/Hand9Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102738/blench-assets/female/Hands/Hand9/zxn120mbz2kfcencaefk.svg",
+  "female/Hands/Hand9/Hand9Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102741/blench-assets/female/Hands/Hand9/e8uoub9mahin1b7mb2b0.svg",
+  "female/Hands/Hand9/Hand9Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102744/blench-assets/female/Hands/Hand9/rswasapcahb28k1kr1vj.svg",
+  "female/Hands/Hand9/Hand9White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102747/blench-assets/female/Hands/Hand9/tymfjjdkuhzb50b05azf.svg",
+  "female/Tattoos/Tattoo1.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102763/blench-assets/female/Tattoos/aj6ob5zbrzbf21iaezyg.svg",
+  "female/Tattoos/Tattoo2.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102766/blench-assets/female/Tattoos/cjf7cenird5xahsqfsiw.svg",
+  "female/Tattoos/Tattoo3.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102769/blench-assets/female/Tattoos/oiskptohhlcfa2tanbj4.svg",
+  "female/Tattoos/Tattoo4.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102771/blench-assets/female/Tattoos/fg6onc5f2mdsfbkms2nf.svg",
+  "female/Tattoos/Tattoo5.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102774/blench-assets/female/Tattoos/lsatmtndwlpvykaduwyy.svg",
+  "female/Tattoos/Tattoo6.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102778/blench-assets/female/Tattoos/i9tmgxt8vhwym15hna30.svg",
+  "female/Tattoos/Tattoo7.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102780/blench-assets/female/Tattoos/fveye28vy3wta81pzibx.svg",
+  "female/Tattoos/Tattoo8.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102784/blench-assets/female/Tattoos/dcnakdj5squzhu61ew5q.svg",
+  "male/Earrings/Earring1.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102786/blench-assets/male/Earrings/ogfxsurismrb3dw8wmfn.svg",
+  "male/Earrings/Earring2.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102789/blench-assets/male/Earrings/clif63lpe2ic0kwo6ccy.svg",
+  "male/Earrings/Earring3.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102791/blench-assets/male/Earrings/eng7ezymlimq7oerjo3r.svg",
+  "male/Earrings/Earring4.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102793/blench-assets/male/Earrings/w63sqfevamcbeykwcnzq.svg",
+  "male/Hands/Hand1/Hand1Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102797/blench-assets/male/Hands/Hand1/rfeqtfmedjekeplxdviv.svg",
+  "male/Hands/Hand1/Hand1Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102802/blench-assets/male/Hands/Hand1/nkyhpgsrnjohmracsunf.svg",
+  "male/Hands/Hand1/Hand1Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102808/blench-assets/male/Hands/Hand1/uj9c26wx1qqwltayvy9o.svg",
+  "male/Hands/Hand1/Hand1White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102813/blench-assets/male/Hands/Hand1/bmfpianwcwlfyzk40fbs.svg",
+  "male/Hands/Hand10/Hand10Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102821/blench-assets/male/Hands/Hand10/obmts2igbobnoebkaywr.svg",
+  "male/Hands/Hand10/Hand10Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102826/blench-assets/male/Hands/Hand10/terys9utmwjxorblydsu.svg",
+  "male/Hands/Hand10/Hand10Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102831/blench-assets/male/Hands/Hand10/wwgp4vn7r4o6ivxervdp.svg",
+  "male/Hands/Hand10/Hand10White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102836/blench-assets/male/Hands/Hand10/rwnbebygmezmwzo4d0s0.svg",
+  "male/Hands/Hand11/Hand11Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102840/blench-assets/male/Hands/Hand11/vg8s9q4v8opuuelsdwe7.svg",
+  "male/Hands/Hand11/Hand11Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102844/blench-assets/male/Hands/Hand11/b1o348w3whsbk6xux1fm.svg",
+  "male/Hands/Hand11/Hand11Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102848/blench-assets/male/Hands/Hand11/klimjcjubw5s64cydsff.svg",
+  "male/Hands/Hand11/Hand11White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102851/blench-assets/male/Hands/Hand11/xbwq3ofoxr5wchlvhydu.svg",
+  "male/Hands/Hand12/Hand12Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102856/blench-assets/male/Hands/Hand12/etciupbgjwpzeqvgyjkf.svg",
+  "male/Hands/Hand12/Hand12Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102860/blench-assets/male/Hands/Hand12/h7h1f5skyn7pxnitwa4m.svg",
+  "male/Hands/Hand12/Hand12Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102864/blench-assets/male/Hands/Hand12/y9oiaxa2agltxeh3vfa8.svg",
+  "male/Hands/Hand12/Hand12White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102869/blench-assets/male/Hands/Hand12/bzpbbsxudeh6mkfi9fow.svg",
+  "male/Hands/Hand13/Hand13Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102875/blench-assets/male/Hands/Hand13/vfgxoyrxx18tcjrpscyx.svg",
+  "male/Hands/Hand13/Hand13Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102880/blench-assets/male/Hands/Hand13/rpdb05oc5wdgaleglz1w.svg",
+  "male/Hands/Hand13/Hand13Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102884/blench-assets/male/Hands/Hand13/lhms3weic9lrjfvlb0vn.svg",
+  "male/Hands/Hand13/Hand13White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102890/blench-assets/male/Hands/Hand13/f5dlorath5abnc2ay1ic.svg",
+  "male/Hands/Hand2/Hand2Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102895/blench-assets/male/Hands/Hand2/n2jkfd12gsqfocdai0dy.svg",
+  "male/Hands/Hand2/Hand2Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102899/blench-assets/male/Hands/Hand2/a3fkxpbnm8da5jn0h2cx.svg",
+  "male/Hands/Hand2/Hand2Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102903/blench-assets/male/Hands/Hand2/n0q5fq0xjha4qclai307.svg",
+  "male/Hands/Hand2/Hand2White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102906/blench-assets/male/Hands/Hand2/wv8sg1iuob15dnhfsohn.svg",
+  "male/Hands/Hand3/Hand3Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102910/blench-assets/male/Hands/Hand3/vddz53cmslhq9exdwnps.svg",
+  "male/Hands/Hand3/Hand3Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102914/blench-assets/male/Hands/Hand3/lxgl2zyocun6dpuwhqlj.svg",
+  "male/Hands/Hand3/Hand3Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102918/blench-assets/male/Hands/Hand3/mfczu0gq2xx7tlivwrz4.svg",
+  "male/Hands/Hand3/Hand3White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102923/blench-assets/male/Hands/Hand3/ncfnvswzwmz5d8jztlpu.svg",
+  "male/Hands/Hand4/Hand4Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102927/blench-assets/male/Hands/Hand4/pi7jtbzzgtigignw0lcl.svg",
+  "male/Hands/Hand4/Hand4Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102929/blench-assets/male/Hands/Hand4/t7mnmk4b0kewvsg3gp8f.svg",
+  "male/Hands/Hand4/Hand4Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102932/blench-assets/male/Hands/Hand4/njrbfff9y5b0e3fet46p.svg",
+  "male/Hands/Hand4/Hand4White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102935/blench-assets/male/Hands/Hand4/nmxg7o20qdkhm8wrhql2.svg",
+  "male/Hands/Hand5/Hand5Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102938/blench-assets/male/Hands/Hand5/sktpltl29j1mr0mvxc6g.svg",
+  "male/Hands/Hand5/Hand5Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102942/blench-assets/male/Hands/Hand5/t19vlmztnjiin3trvcis.svg",
+  "male/Hands/Hand5/Hand5Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102945/blench-assets/male/Hands/Hand5/kymuqogss31mfvrhyemn.svg",
+  "male/Hands/Hand5/Hand5White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102948/blench-assets/male/Hands/Hand5/ytqdsfpwfm9wfjffctsp.svg",
+  "male/Hands/Hand6/Hand6Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102952/blench-assets/male/Hands/Hand6/nkuvmstxrqbfkqbjwgnr.svg",
+  "male/Hands/Hand6/Hand6Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102956/blench-assets/male/Hands/Hand6/ww9zrtknahjhiy7gmatd.svg",
+  "male/Hands/Hand6/Hand6Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102961/blench-assets/male/Hands/Hand6/ldkg6g6etxss43saigby.svg",
+  "male/Hands/Hand6/Hand6White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102965/blench-assets/male/Hands/Hand6/ldellyhnw02g3xbsbqkh.svg",
+  "male/Hands/Hand7/Hand7Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102970/blench-assets/male/Hands/Hand7/uuy2nzpjp7ncpwqruu46.svg",
+  "male/Hands/Hand7/Hand7Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102974/blench-assets/male/Hands/Hand7/d7blolqrdlszo0egvwo8.svg",
+  "male/Hands/Hand7/Hand7Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102977/blench-assets/male/Hands/Hand7/tnnbhzqh6vmdxvn6equ1.svg",
+  "male/Hands/Hand7/Hand7White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102981/blench-assets/male/Hands/Hand7/nkzxgjlzxuybyc5fr54m.svg",
+  "male/Hands/Hand8/Hand8Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102985/blench-assets/male/Hands/Hand8/blnmx9pvfcdccn2azrhy.svg",
+  "male/Hands/Hand8/Hand8Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102989/blench-assets/male/Hands/Hand8/dvlf32h4rwdang0d9xat.svg",
+  "male/Hands/Hand8/Hand8Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102993/blench-assets/male/Hands/Hand8/o6idausgjv0pjhyohshv.svg",
+  "male/Hands/Hand8/Hand8White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760102997/blench-assets/male/Hands/Hand8/elxsgu53k2bbwoxjsjj4.svg",
+  "male/Hands/Hand9/Hand9Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103002/blench-assets/male/Hands/Hand9/bma3rcqz5buuz8buc5pv.svg",
+  "male/Hands/Hand9/Hand9Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103006/blench-assets/male/Hands/Hand9/yb7ejprkjbmxgawkf4an.svg",
+  "male/Hands/Hand9/Hand9Light.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103010/blench-assets/male/Hands/Hand9/br6tqocn9hry5i7k7ssv.svg",
+  "male/Hands/Hand9/Hand9White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103013/blench-assets/male/Hands/Hand9/nir67tvb5lolba7h9tnb.svg",
+  "male/MaleEyes/MaleEyeBlack.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103017/blench-assets/male/MaleEyes/bqptasayajkpbiwxvlfi.svg",
+  "male/MaleEyes/MaleEyeBlue.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103021/blench-assets/male/MaleEyes/akmgahtwlg5fxt73txt0.svg",
+  "male/MaleEyes/MaleEyeGreen.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103025/blench-assets/male/MaleEyes/ipzxfauvaraq4bvxmd79.svg",
+  "male/MaleEyes/MaleEyeRed.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103029/blench-assets/male/MaleEyes/w7coazn7pp4vumm6olxi.svg",
+  "male/MaleEyes/MaleEyeYellow.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103032/blench-assets/male/MaleEyes/eykky41mjcx1omsvjgih.svg",
+  "male/MaleHairs/MaleHair1/Hair1Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103037/blench-assets/male/MaleHairs/MaleHair1/hbbmhoepik8qkxg07opj.svg",
+  "male/MaleHairs/MaleHair1/Hair1Blue.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103044/blench-assets/male/MaleHairs/MaleHair1/fcyvf6mirlpivruvhksg.svg",
+  "male/MaleHairs/MaleHair1/Hair1Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103051/blench-assets/male/MaleHairs/MaleHair1/vjnlnygbzbcxqs6shtxc.svg",
+  "male/MaleHairs/MaleHair1/Hair1Green.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103059/blench-assets/male/MaleHairs/MaleHair1/hnbr1uvngmcjqxo8hifi.svg",
+  "male/MaleHairs/MaleHair1/Hair1Red.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103066/blench-assets/male/MaleHairs/MaleHair1/wrqypow4hfkiir0wpog9.svg",
+  "male/MaleHairs/MaleHair1/Hair1White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103074/blench-assets/male/MaleHairs/MaleHair1/ojt8ot0rwm9mxs7aq1io.svg",
+  "male/MaleHairs/MaleHair1/Hair1Yellow.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103083/blench-assets/male/MaleHairs/MaleHair1/gw8punfongqut4smohgb.svg",
+  "male/MaleHairs/MaleHair2/hair2Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103089/blench-assets/male/MaleHairs/MaleHair2/o0beb6ezzqanrwucnph7.svg",
+  "male/MaleHairs/MaleHair2/hair2Blue.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103095/blench-assets/male/MaleHairs/MaleHair2/dexehghbuw2uqqbbpcxe.svg",
+  "male/MaleHairs/MaleHair2/hair2Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103100/blench-assets/male/MaleHairs/MaleHair2/ydsqqlwqurzobq13hfey.svg",
+  "male/MaleHairs/MaleHair2/hair2Green.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103104/blench-assets/male/MaleHairs/MaleHair2/vbokd5leuecdimjft31r.svg",
+  "male/MaleHairs/MaleHair2/hair2Red.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103109/blench-assets/male/MaleHairs/MaleHair2/ly4t3smiy0ib1vzymstj.svg",
+  "male/MaleHairs/MaleHair2/hair2White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103114/blench-assets/male/MaleHairs/MaleHair2/eor1cvlniwbvpmtt4rhp.svg",
+  "male/MaleHairs/MaleHair2/hair2Yellow.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103118/blench-assets/male/MaleHairs/MaleHair2/hpvqjksluvfjmzuqx5ks.svg",
+  "male/MaleHairs/MaleHair3/Hair3Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103122/blench-assets/male/MaleHairs/MaleHair3/wg6honlrgn926vscrpks.svg",
+  "male/MaleHairs/MaleHair3/Hair3Blue.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103126/blench-assets/male/MaleHairs/MaleHair3/axpcwexo9dy8azz4nhdn.svg",
+  "male/MaleHairs/MaleHair3/Hair3Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103132/blench-assets/male/MaleHairs/MaleHair3/emowf14vwyfqaojobot5.svg",
+  "male/MaleHairs/MaleHair3/Hair3Green.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103135/blench-assets/male/MaleHairs/MaleHair3/bjiccaq7hthwiurf5tyj.svg",
+  "male/MaleHairs/MaleHair3/Hair3Red.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103137/blench-assets/male/MaleHairs/MaleHair3/v95cmkqf9jfzyrplz9kl.svg",
+  "male/MaleHairs/MaleHair3/Hair3White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103140/blench-assets/male/MaleHairs/MaleHair3/nkljkry9btv87g7ibuq0.svg",
+  "male/MaleHairs/MaleHair3/Hair3Yellow.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103143/blench-assets/male/MaleHairs/MaleHair3/pxwic1tbcl0ydytsmqf4.svg",
+  "male/MaleHairs/MaleHair4/Hair4Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103146/blench-assets/male/MaleHairs/MaleHair4/iov837ey6k729vr9amzp.svg",
+  "male/MaleHairs/MaleHair4/Hair4Blue.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103149/blench-assets/male/MaleHairs/MaleHair4/o89sdmldly4jdp0nvrrn.svg",
+  "male/MaleHairs/MaleHair4/Hair4Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103153/blench-assets/male/MaleHairs/MaleHair4/empzy8phemqo5marf0hk.svg",
+  "male/MaleHairs/MaleHair4/Hair4Green.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103156/blench-assets/male/MaleHairs/MaleHair4/jvabarmv27v0aznrd7ek.svg",
+  "male/MaleHairs/MaleHair4/Hair4Red.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103160/blench-assets/male/MaleHairs/MaleHair4/blxg2pucylulxby8z2c9.svg",
+  "male/MaleHairs/MaleHair4/Hair4White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103163/blench-assets/male/MaleHairs/MaleHair4/g9apdicyhq1gzbl1u8xa.svg",
+  "male/MaleHairs/MaleHair4/Hair4Yellow.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103166/blench-assets/male/MaleHairs/MaleHair4/mdqknb5svdpw0hiwp3k4.svg",
+  "male/MaleHairs/MaleHair5/Hair5Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103169/blench-assets/male/MaleHairs/MaleHair5/tvmtswqqawwhjlfsbqtj.svg",
+  "male/MaleHairs/MaleHair5/Hair5Blue.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103172/blench-assets/male/MaleHairs/MaleHair5/ompw1xhqufpsb6xul3ip.svg",
+  "male/MaleHairs/MaleHair5/Hair5Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103176/blench-assets/male/MaleHairs/MaleHair5/zrimbnpkgo90tu0aogsf.svg",
+  "male/MaleHairs/MaleHair5/Hair5Green.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103179/blench-assets/male/MaleHairs/MaleHair5/jahvofuqmggbbfbl9txt.svg",
+  "male/MaleHairs/MaleHair5/Hair5Red.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103183/blench-assets/male/MaleHairs/MaleHair5/rlzxeaxqnwmkqwoxtj8k.svg",
+  "male/MaleHairs/MaleHair5/Hair5Yellow.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103187/blench-assets/male/MaleHairs/MaleHair5/xjvskfbmz8mzhoflxtec.svg",
+  "male/MaleHairs/MaleHair6/Hair6black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103192/blench-assets/male/MaleHairs/MaleHair6/vnsozsl6ud1codrhjsz1.svg",
+  "male/MaleHairs/MaleHair6/Hair6Blue.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103199/blench-assets/male/MaleHairs/MaleHair6/speldbajht8cutmrynjh.svg",
+  "male/MaleHairs/MaleHair6/Hair6Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103202/blench-assets/male/MaleHairs/MaleHair6/iygnazla8dnmcvegiqpd.svg",
+  "male/MaleHairs/MaleHair6/Hair6Green.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103205/blench-assets/male/MaleHairs/MaleHair6/tjwbznv9asfssv8tbglf.svg",
+  "male/MaleHairs/MaleHair6/Hair6Red.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103208/blench-assets/male/MaleHairs/MaleHair6/ocijkwsqkpl3qvosnlxj.svg",
+  "male/MaleHairs/MaleHair6/Hair6White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103212/blench-assets/male/MaleHairs/MaleHair6/wugbsuiqxopyybnjdko3.svg",
+  "male/MaleHairs/MaleHair6/Hair6Yellow.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103215/blench-assets/male/MaleHairs/MaleHair6/gxahllyjntht4pig4gqe.svg",
+  "male/MaleHead/BlackMale.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103221/blench-assets/male/MaleHead/dyiecfl2kfq5oyk7xpz6.svg",
+  "male/MaleHead/BrownMale.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103225/blench-assets/male/MaleHead/sgdnnepoxg7yxeeynknt.svg",
+  "male/MaleHead/LightMale.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103229/blench-assets/male/MaleHead/czvhivh0k8wswuricepy.svg",
+  "male/MaleHead/WhiteMale.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103232/blench-assets/male/MaleHead/pwdtrxhqeuzvicdgandq.svg",
+  "male/MaleHeadGear/MaleHeadGear1.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103237/blench-assets/male/MaleHeadGear/aojrhneoikxcs9valjfo.svg",
+  "male/MaleHeadGear/MaleHeadGear2.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103241/blench-assets/male/MaleHeadGear/yp7pnizumfss9yqcx38q.svg",
+  "male/MaleHeadGear/MaleHeadGear3.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103247/blench-assets/male/MaleHeadGear/ydkazratinmnaj5pvqd9.svg",
+  "male/MaleHeadGear/MaleHeadGear4.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103252/blench-assets/male/MaleHeadGear/zqcc5frfc6ddrjdnaz9p.svg",
+  "male/MaleHeadGear/MaleHeadGear5.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103256/blench-assets/male/MaleHeadGear/bpjql35qhsdyhleycqwl.svg",
+  "male/MaleHeadGear/MaleHeadGear6.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103261/blench-assets/male/MaleHeadGear/cz1l6qihergttufjl0l9.svg",
+  "male/MaleHeadGear/MaleHeadGear7.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103266/blench-assets/male/MaleHeadGear/p8u0geprdgygftznhmwc.svg",
+  "male/MaleShirts/MaleShirts1/MaleShirt1Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103270/blench-assets/male/MaleShirts/MaleShirts1/i469a7e5r9ldr8cn0m4i.svg",
+  "male/MaleShirts/MaleShirts1/MaleShirt1Blue.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103273/blench-assets/male/MaleShirts/MaleShirts1/atedxuek88k6dd94ykea.svg",
+  "male/MaleShirts/MaleShirts1/MaleShirt1Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103275/blench-assets/male/MaleShirts/MaleShirts1/lk23kjrwtxtdubyfmsnj.svg",
+  "male/MaleShirts/MaleShirts1/MaleShirt1Green.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103278/blench-assets/male/MaleShirts/MaleShirts1/gtp7muxv7uslsyaeikdx.svg",
+  "male/MaleShirts/MaleShirts1/MaleShirt1Red.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103281/blench-assets/male/MaleShirts/MaleShirts1/dcxbsrbit0difkchofri.svg",
+  "male/MaleShirts/MaleShirts1/MaleShirt1White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103284/blench-assets/male/MaleShirts/MaleShirts1/lehodurbphc3l9qzmhfq.svg",
+  "male/MaleShirts/MaleShirts1/MaleShirt1Yellow.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103287/blench-assets/male/MaleShirts/MaleShirts1/zp7fxczrgm4bveu6m14z.svg",
+  "male/MaleShirts/MaleShirts2/MaleShirt2Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103292/blench-assets/male/MaleShirts/MaleShirts2/jpgbl8kajbyfx66sufnd.svg",
+  "male/MaleShirts/MaleShirts2/MaleShirt2Blue.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103298/blench-assets/male/MaleShirts/MaleShirts2/kialgydr4pb21yobmobe.svg",
+  "male/MaleShirts/MaleShirts2/MaleShirt2Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103304/blench-assets/male/MaleShirts/MaleShirts2/mzdoj1wvxqkprusgtjsw.svg",
+  "male/MaleShirts/MaleShirts2/MaleShirt2Green.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103310/blench-assets/male/MaleShirts/MaleShirts2/jdpk96w6a5gc0hi87z7o.svg",
+  "male/MaleShirts/MaleShirts2/MaleShirt2Red.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103317/blench-assets/male/MaleShirts/MaleShirts2/pddhgm9a35akfxcnqdrm.svg",
+  "male/MaleShirts/MaleShirts2/MaleShirt2White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103324/blench-assets/male/MaleShirts/MaleShirts2/pi6wq8qgh3hrjlqqokox.svg",
+  "male/MaleShirts/MaleShirts2/MaleShirt2Yellow.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103331/blench-assets/male/MaleShirts/MaleShirts2/l0zyv7unlm7jcylr6l3k.svg",
+  "male/MaleShirts/MaleShirts3/MaleShirt3Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103338/blench-assets/male/MaleShirts/MaleShirts3/yamgg5jbcpizus5eoqmk.svg",
+  "male/MaleShirts/MaleShirts3/MaleShirt3Blue.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103344/blench-assets/male/MaleShirts/MaleShirts3/kzicvfslkqt3qdwufvpp.svg",
+  "male/MaleShirts/MaleShirts3/MaleShirt3Brown.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103349/blench-assets/male/MaleShirts/MaleShirts3/cfrxvmvfv20gdhhxtfhv.svg",
+  "male/MaleShirts/MaleShirts3/MaleShirt3Green.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103355/blench-assets/male/MaleShirts/MaleShirts3/s4spakqteap7p5vdndnu.svg",
+  "male/MaleShirts/MaleShirts3/MaleShirt3Red.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103361/blench-assets/male/MaleShirts/MaleShirts3/v0wmro0azf9hejnvmfh1.svg",
+  "male/MaleShirts/MaleShirts3/MaleShirt3White.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103367/blench-assets/male/MaleShirts/MaleShirts3/c9gvee7vsimudiyrrebk.svg",
+  "male/MaleShirts/MaleShirts3/MaleShirt3Yellow.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103372/blench-assets/male/MaleShirts/MaleShirts3/puuqdko2flxz31fs78c4.svg",
+  "male/MaleShirts/MaleShirts4/MaleShirt4Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103377/blench-assets/male/MaleShirts/MaleShirts4/smxejwydvngnzzhrxnwj.svg",
+  "male/MaleShirts/MaleShirts4/MaleShirt4Blue.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103381/blench-assets/male/MaleShirts/MaleShirts4/er1dtzoxd0rcc6geyebp.svg",
+  "male/MaleShirts/MaleShirts4/MaleShirt4Red.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103384/blench-assets/male/MaleShirts/MaleShirts4/uuzmtksm2o6dzih48sm5.svg",
+  "male/MaleShirts/MaleShirts5/MaleShirt5Black.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103387/blench-assets/male/MaleShirts/MaleShirts5/luinfufiji91fxor74tz.svg",
+  "male/MaleShirts/MaleShirts5/MaleShirt5Blue.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103391/blench-assets/male/MaleShirts/MaleShirts5/hpczsi1agp6mcz1hbu1a.svg",
+  "male/MaleShirts/MaleShirts5/MaleShirt5Grey.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103395/blench-assets/male/MaleShirts/MaleShirts5/iva6ijd5ri5kibcf7wbo.svg",
+  "male/MaleShirts/MaleShirts5/MaleShirt5Red.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103398/blench-assets/male/MaleShirts/MaleShirts5/loyinytdnanqyoay5cvo.svg",
+  "male/MaleShirts/MaleShirts6/MaleShirt6.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103402/blench-assets/male/MaleShirts/MaleShirts6/xmuz3opp421urirtb9qx.svg",
+  "male/MaleShirts/MaleShirts7/MaleShirt7.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103407/blench-assets/male/MaleShirts/MaleShirts7/ueennk2zhhf7ajz6bosz.svg",
+  "male/MaleShirts/MaleShirts8/MaleShirt8.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103421/blench-assets/male/MaleShirts/MaleShirts8/kxkfakse8t622oinn2ki.svg",
+  "male/Tattoos/Tattoo1.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103424/blench-assets/male/Tattoos/f7fewlpqmqhsncaaa67p.svg",
+  "male/Tattoos/Tattoo2.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103427/blench-assets/male/Tattoos/w4u0viyz89ffabnwyox8.svg",
+  "male/Tattoos/Tattoo3.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103430/blench-assets/male/Tattoos/owjs5koy6rmywrgbql35.svg",
+  "male/Tattoos/Tattoo4.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103432/blench-assets/male/Tattoos/ox28pxbmzaf1ldfcuobh.svg",
+  "male/Tattoos/Tattoo5.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103436/blench-assets/male/Tattoos/adls1xacb2byxnkcjb5f.svg",
+  "male/Tattoos/Tattoo6.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103439/blench-assets/male/Tattoos/vl9qflj6o6vylrfqbwxc.svg",
+  "male/Tattoos/Tattoo7.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103441/blench-assets/male/Tattoos/tlbw1eiuqcaljjmrki7r.svg",
+  "male/Tattoos/Tattoo8.svg": "https://res.cloudinary.com/dwzojroob/image/upload/v1760103446/blench-assets/male/Tattoos/ykpybvcpgxgsmdujrfmb.svg"
 };
 
 export default cloudinaryMapping;

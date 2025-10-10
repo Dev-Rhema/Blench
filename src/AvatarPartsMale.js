@@ -1,5 +1,6 @@
 import mapping from "../cloudinary-mapping.js";
 import Earring4 from "./Earring4.svg";
+import BlockSign from "./BlockSign.svg";
 
 const avatarPartsMale = {
   head: {
@@ -11,6 +12,23 @@ const avatarPartsMale = {
           Brown: mapping["male/MaleHead/BrownMale.svg"],
           Light: mapping["male/MaleHead/LightMale.svg"],
           White: mapping["male/MaleHead/WhiteMale.svg"],
+        },
+      },
+    ],
+  },
+  headgear: {
+    styles: [
+      {
+        name: "headgear",
+        colors: {
+          HeadGear4: mapping["male/MaleHeadGear/MaleHeadGear4.svg"],
+          HeadGear1: mapping["male/MaleHeadGear/MaleHeadGear1.svg"],
+          HeadGear2: mapping["male/MaleHeadGear/MaleHeadGear2.svg"],
+          HeadGear3: mapping["male/MaleHeadGear/MaleHeadGear3.svg"],
+          HeadGear5: mapping["male/MaleHeadGear/MaleHeadGear5.svg"],
+          HeadGear6: mapping["male/MaleHeadGear/MaleHeadGear6.svg"],
+          HeadGear7: mapping["male/MaleHeadGear/MaleHeadGear7.svg"],
+          BlockSign: BlockSign,
         },
       },
     ],
@@ -34,45 +52,72 @@ const avatarPartsMale = {
       {
         name: "hair1",
         colors: {
-          black: mapping["male/MaleHairs/MaleHair1/Hair1Black.svg"],
-          brown: mapping["male/MaleHairs/MaleHair1/Hair1Brown.svg"],
-          green: mapping["male/MaleHairs/MaleHair1/Hair1Green.svg"],
-          red: mapping["male/MaleHairs/MaleHair1/Hair1Red.svg"],
-          white: mapping["male/MaleHairs/MaleHair1/Hair1White.svg"],
-          yellow: mapping["male/MaleHairs/MaleHair1/Hair1Yellow.svg"],
+          Black: mapping["male/MaleHairs/MaleHair1/Hair1Black.svg"],
+          Blue: mapping["male/MaleHairs/MaleHair1/Hair1Blue.svg"],
+          Brown: mapping["male/MaleHairs/MaleHair1/Hair1Brown.svg"],
+          Green: mapping["male/MaleHairs/MaleHair1/Hair1Green.svg"],
+          Red: mapping["male/MaleHairs/MaleHair1/Hair1Red.svg"],
+          White: mapping["male/MaleHairs/MaleHair1/Hair1White.svg"],
+          Yellow: mapping["male/MaleHairs/MaleHair1/Hair1Yellow.svg"],
         },
       },
       {
         name: "hair2",
         colors: {
-          black: mapping["male/MaleHairs/MaleHair2/hair2Black.svg"],
-          brown: mapping["male/MaleHairs/MaleHair2/hair2Brown.svg"],
-          green: mapping["male/MaleHairs/MaleHair2/hair2Green.svg"],
-          red: mapping["male/MaleHairs/MaleHair2/hair2Red.svg"],
-          white: mapping["male/MaleHairs/MaleHair2/hair2White.svg"],
-          yellow: mapping["male/MaleHairs/MaleHair2/hair2Yellow.svg"],
+          Black: mapping["male/MaleHairs/MaleHair2/hair2Black.svg"],
+          Blue: mapping["male/MaleHairs/MaleHair2/hair2Blue.svg"],
+          Brown: mapping["male/MaleHairs/MaleHair2/hair2Brown.svg"],
+          Green: mapping["male/MaleHairs/MaleHair2/hair2Green.svg"],
+          Red: mapping["male/MaleHairs/MaleHair2/hair2Red.svg"],
+          White: mapping["male/MaleHairs/MaleHair2/hair2White.svg"],
+          Yellow: mapping["male/MaleHairs/MaleHair2/hair2Yellow.svg"],
         },
       },
       {
         name: "hair3",
         colors: {
-          black: mapping["male/MaleHairs/MaleHair3/Hair3Black.svg"],
-          brown: mapping["male/MaleHairs/MaleHair3/Hair3Brown.svg"],
-          green: mapping["male/MaleHairs/MaleHair3/Hair3Green.svg"],
-          blue: mapping["male/MaleHairs/MaleHair3/Hair3Blue.svg"],
-          red: mapping["male/MaleHairs/MaleHair3/Hair3Red.svg"],
-          white: mapping["male/MaleHairs/MaleHair3/Hair3White.svg"],
+          Black: mapping["male/MaleHairs/MaleHair3/Hair3Black.svg"],
+          Blue: mapping["male/MaleHairs/MaleHair3/Hair3Blue.svg"],
+          Brown: mapping["male/MaleHairs/MaleHair3/Hair3Brown.svg"],
+          Green: mapping["male/MaleHairs/MaleHair3/Hair3Green.svg"],
+          Red: mapping["male/MaleHairs/MaleHair3/Hair3Red.svg"],
+          White: mapping["male/MaleHairs/MaleHair3/Hair3White.svg"],
+          Yellow: mapping["male/MaleHairs/MaleHair3/Hair3Yellow.svg"],
         },
       },
       {
         name: "hair4",
         colors: {
-          black: mapping["male/MaleHairs/MaleHair4/Hair4Black.svg"],
-          brown: mapping["male/MaleHairs/MaleHair4/Hair4Brown.svg"],
-          green: mapping["male/MaleHairs/MaleHair4/Hair4Green.svg"],
-          blue: mapping["male/MaleHairs/MaleHair4/Hair4Blue.svg"],
-          red: mapping["male/MaleHairs/MaleHair4/Hair4Red.svg"],
-          white: mapping["male/MaleHairs/MaleHair4/Hair4White.svg"],
+          Black: mapping["male/MaleHairs/MaleHair4/Hair4Black.svg"],
+          Blue: mapping["male/MaleHairs/MaleHair4/Hair4Blue.svg"],
+          Brown: mapping["male/MaleHairs/MaleHair4/Hair4Brown.svg"],
+          Green: mapping["male/MaleHairs/MaleHair4/Hair4Green.svg"],
+          Red: mapping["male/MaleHairs/MaleHair4/Hair4Red.svg"],
+          White: mapping["male/MaleHairs/MaleHair4/Hair4White.svg"],
+          Yellow: mapping["male/MaleHairs/MaleHair4/Hair4Yellow.svg"],
+        },
+      },
+      {
+        name: "hair5",
+        colors: {
+          Black: mapping["male/MaleHairs/MaleHair5/Hair5Black.svg"],
+          Blue: mapping["male/MaleHairs/MaleHair5/Hair5Blue.svg"],
+          Brown: mapping["male/MaleHairs/MaleHair5/Hair5Brown.svg"],
+          Green: mapping["male/MaleHairs/MaleHair5/Hair5Green.svg"],
+          Red: mapping["male/MaleHairs/MaleHair5/Hair5Red.svg"],
+          Yellow: mapping["male/MaleHairs/MaleHair5/Hair5Yellow.svg"],
+        },
+      },
+      {
+        name: "hair6",
+        colors: {
+          Black: mapping["male/MaleHairs/MaleHair6/Hair6black.svg"],
+          Blue: mapping["male/MaleHairs/MaleHair6/Hair6Blue.svg"],
+          Brown: mapping["male/MaleHairs/MaleHair6/Hair6Brown.svg"],
+          Green: mapping["male/MaleHairs/MaleHair6/Hair6Green.svg"],
+          Red: mapping["male/MaleHairs/MaleHair6/Hair6Red.svg"],
+          White: mapping["male/MaleHairs/MaleHair6/Hair6White.svg"],
+          Yellow: mapping["male/MaleHairs/MaleHair6/Hair6Yellow.svg"],
         },
       },
     ],
@@ -82,34 +127,72 @@ const avatarPartsMale = {
       {
         name: "shirt1",
         colors: {
-          black: mapping["male/MaleShirts/MaleShirts1/MaleShirt1Black.svg"],
-          brown: mapping["male/MaleShirts/MaleShirts1/MaleShirt1Brown.svg"],
-          green: mapping["male/MaleShirts/MaleShirts1/MaleShirt1Green.svg"],
-          red: mapping["male/MaleShirts/MaleShirts1/MaleShirt1Red.svg"],
-          white: mapping["male/MaleShirts/MaleShirts1/MaleShirt1White.svg"],
-          yellow: mapping["male/MaleShirts/MaleShirts1/MaleShirt1Yellow.svg"],
+          Black: mapping["male/MaleShirts/MaleShirts1/MaleShirt1Black.svg"],
+          Blue: mapping["male/MaleShirts/MaleShirts1/MaleShirt1Blue.svg"],
+          Brown: mapping["male/MaleShirts/MaleShirts1/MaleShirt1Brown.svg"],
+          Green: mapping["male/MaleShirts/MaleShirts1/MaleShirt1Green.svg"],
+          Red: mapping["male/MaleShirts/MaleShirt1Red.svg"],
+          White: mapping["male/MaleShirts/MaleShirts1/MaleShirt1White.svg"],
+          Yellow: mapping["male/MaleShirts/MaleShirts1/MaleShirt1Yellow.svg"],
         },
       },
       {
         name: "shirt2",
         colors: {
-          black: mapping["male/MaleShirts/MaleShirts2/MaleShirt2Black.svg"],
-          brown: mapping["male/MaleShirts/MaleShirts2/MaleShirt2Brown.svg"],
-          green: mapping["male/MaleShirts/MaleShirts2/MaleShirt2Green.svg"],
-          red: mapping["male/MaleShirts/MaleShirts2/MaleShirt2Red.svg"],
-          white: mapping["male/MaleShirts/MaleShirts2/MaleShirt2White.svg"],
-          yellow: mapping["male/MaleShirts/MaleShirts2/MaleShirt2Yellow.svg"],
+          Black: mapping["male/MaleShirts/MaleShirts2/MaleShirt2Black.svg"],
+          Blue: mapping["male/MaleShirts/MaleShirts2/MaleShirt2Blue.svg"],
+          Brown: mapping["male/MaleShirts/MaleShirts2/MaleShirt2Brown.svg"],
+          Green: mapping["male/MaleShirts/MaleShirts2/MaleShirt2Green.svg"],
+          Red: mapping["male/MaleShirts/MaleShirts2/MaleShirt2Red.svg"],
+          White: mapping["male/MaleShirts/MaleShirts2/MaleShirt2White.svg"],
+          Yellow: mapping["male/MaleShirts/MaleShirts2/MaleShirt2Yellow.svg"],
         },
       },
       {
         name: "shirt3",
         colors: {
-          black: mapping["male/MaleShirts/MaleShirts3/MaleShirt3Black.svg"],
-          brown: mapping["male/MaleShirts/MaleShirts3/MaleShirt3Brown.svg"],
-          green: mapping["male/MaleShirts/MaleShirts3/MaleShirt3Green.svg"],
-          red: mapping["male/MaleShirts/MaleShirts3/MaleShirt3Red.svg"],
-          white: mapping["male/MaleShirts/MaleShirts3/MaleShirt3White.svg"],
-          yellow: mapping["male/MaleShirts/MaleShirts3/MaleShirt3Yellow.svg"],
+          Black: mapping["male/MaleShirts/MaleShirts3/MaleShirt3Black.svg"],
+          Blue: mapping["male/MaleShirts/MaleShirts3/MaleShirt3Blue.svg"],
+          Brown: mapping["male/MaleShirts/MaleShirts3/MaleShirt3Brown.svg"],
+          Green: mapping["male/MaleShirts/MaleShirts3/MaleShirt3Green.svg"],
+          Red: mapping["male/MaleShirts/MaleShirts3/MaleShirt3Red.svg"],
+          White: mapping["male/MaleShirts/MaleShirts3/MaleShirt3White.svg"],
+          Yellow: mapping["male/MaleShirts/MaleShirts3/MaleShirt3Yellow.svg"],
+        },
+      },
+      {
+        name: "shirt4",
+        colors: {
+          Black: mapping["male/MaleShirts/MaleShirts4/MaleShirt4Black.svg"],
+          Blue: mapping["male/MaleShirts/MaleShirts4/MaleShirt4Blue.svg"],
+          Red: mapping["male/MaleShirts/MaleShirts4/MaleShirt4Red.svg"],
+        },
+      },
+      {
+        name: "shirt5",
+        colors: {
+          Black: mapping["male/MaleShirts/MaleShirts5/MaleShirt5Black.svg"],
+          Blue: mapping["male/MaleShirts/MaleShirts5/MaleShirt5Blue.svg"],
+          Grey: mapping["male/MaleShirts/MaleShirts5/MaleShirt5Grey.svg"],
+          Red: mapping["male/MaleShirts/MaleShirts5/MaleShirt5Red.svg"],
+        },
+      },
+      {
+        name: "shirt6",
+        colors: {
+          Default: mapping["male/MaleShirts/MaleShirts6/MaleShirt6.svg"],
+        },
+      },
+      {
+        name: "shirt7",
+        colors: {
+          Default: mapping["male/MaleShirts/MaleShirts7/MaleShirt7.svg"],
+        },
+      },
+      {
+        name: "shirt8",
+        colors: {
+          Default: mapping["male/MaleShirts/MaleShirts8/MaleShirt8.svg"],
         },
       },
     ],
@@ -187,6 +270,78 @@ const avatarPartsMale = {
           Brown: mapping["male/Hands/Hand5/Hand5Brown.svg"],
           Light: mapping["male/Hands/Hand5/Hand5Light.svg"],
           White: mapping["male/Hands/Hand5/Hand5White.svg"],
+        },
+      },
+      {
+        name: "hand6",
+        colors: {
+          Black: mapping["male/Hands/Hand6/Hand6Black.svg"],
+          Brown: mapping["male/Hands/Hand6/Hand6Brown.svg"],
+          Light: mapping["male/Hands/Hand6/Hand6Light.svg"],
+          White: mapping["male/Hands/Hand6/Hand6White.svg"],
+        },
+      },
+      {
+        name: "hand7",
+        colors: {
+          Black: mapping["male/Hands/Hand7/Hand7Black.svg"],
+          Brown: mapping["male/Hands/Hand7/Hand7Brown.svg"],
+          Light: mapping["male/Hands/Hand7/Hand7Light.svg"],
+          White: mapping["male/Hands/Hand7/Hand7White.svg"],
+        },
+      },
+      {
+        name: "hand8",
+        colors: {
+          Black: mapping["male/Hands/Hand8/Hand8Black.svg"],
+          Brown: mapping["male/Hands/Hand8/Hand8Brown.svg"],
+          Light: mapping["male/Hands/Hand8/Hand8Light.svg"],
+          White: mapping["male/Hands/Hand8/Hand8White.svg"],
+        },
+      },
+      {
+        name: "hand9",
+        colors: {
+          Black: mapping["male/Hands/Hand9/Hand9Black.svg"],
+          Brown: mapping["male/Hands/Hand9/Hand9Brown.svg"],
+          Light: mapping["male/Hands/Hand9/Hand9Light.svg"],
+          White: mapping["male/Hands/Hand9/Hand9White.svg"],
+        },
+      },
+      {
+        name: "hand10",
+        colors: {
+          Black: mapping["male/Hands/Hand10/Hand10Black.svg"],
+          Brown: mapping["male/Hands/Hand10/Hand10Brown.svg"],
+          Light: mapping["male/Hands/Hand10/Hand10Light.svg"],
+          White: mapping["male/Hands/Hand10/Hand10White.svg"],
+        },
+      },
+      {
+        name: "hand11",
+        colors: {
+          Black: mapping["male/Hands/Hand11/Hand11Black.svg"],
+          Brown: mapping["male/Hands/Hand11/Hand11Brown.svg"],
+          Light: mapping["male/Hands/Hand11/Hand11Light.svg"],
+          White: mapping["male/Hands/Hand11/Hand11White.svg"],
+        },
+      },
+      {
+        name: "hand12",
+        colors: {
+          Black: mapping["male/Hands/Hand12/Hand12Black.svg"],
+          Brown: mapping["male/Hands/Hand12/Hand12Brown.svg"],
+          Light: mapping["male/Hands/Hand12/Hand12Light.svg"],
+          White: mapping["male/Hands/Hand12/Hand12White.svg"],
+        },
+      },
+      {
+        name: "hand13",
+        colors: {
+          Black: mapping["male/Hands/Hand13/Hand13Black.svg"],
+          Brown: mapping["male/Hands/Hand13/Hand13Brown.svg"],
+          Light: mapping["male/Hands/Hand13/Hand13Light.svg"],
+          White: mapping["male/Hands/Hand13/Hand13White.svg"],
         },
       },
     ],

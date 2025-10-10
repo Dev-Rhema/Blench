@@ -169,48 +169,68 @@ function StyleSelector({
   selectedStyleIdx,
   setSelections,
   selectedPart,
+  selections,
 }) {
+  // For hands, preview with current head color if available
   return (
     <div className="grid grid-cols-2 gap-2 w-full max-w-xs mx-auto">
-      {paddedStyles.map((style, idx) => (
-        <div
-          key={idx}
-          className={`aspect-square cursor-pointer border border-gray-100 flex items-center justify-center ${
-            selectedStyleIdx === idx ? "ring-2 ring-rose-500" : ""
-          }`}
-          style={{
-            background: style
-              ? "radial-gradient(circle at 25% 25%, #fff 0%, #27272a 75%)"
-              : "transparent",
-            opacity: style ? 1 : 0.3,
-            width: "100%",
-            height: "100%",
-            minWidth: "4rem",
-            minHeight: "4rem",
-            maxWidth: "8rem",
-            maxHeight: "8rem",
-          }}
-          onClick={() => {
-            if (style) {
-              setSelections((prev) => ({
-                ...prev,
-                [selectedPart]: {
-                  styleIdx: idx,
-                  color: Object.keys(style.colors)[0],
-                },
-              }));
-            }
-          }}
-        >
-          {style && (
-            <img
-              src={style.colors[Object.keys(style.colors)[0]]}
-              alt={style.name}
-              className="w-3/4 h-3/4 object-contain"
-            />
-          )}
-        </div>
-      ))}
+      {paddedStyles.map((style, idx) => {
+        let previewColorKey = style ? Object.keys(style.colors)[0] : null;
+        if (style && selectedPart === "hands" && selections && selections.head) {
+          const headColor = selections.head.color;
+          if (style.colors[headColor]) {
+            previewColorKey = headColor;
+          }
+        }
+        return (
+          <div
+            key={idx}
+            className={`aspect-square cursor-pointer border border-gray-100 flex items-center justify-center ${
+              selectedStyleIdx === idx ? "ring-2 ring-rose-500" : ""
+            }`}
+            style={{
+              background: style
+                ? "radial-gradient(circle at 25% 25%, #fff 0%, #27272a 75%)"
+                : "transparent",
+              opacity: style ? 1 : 0.3,
+              width: "100%",
+              height: "100%",
+              minWidth: "4rem",
+              minHeight: "4rem",
+              maxWidth: "8rem",
+              maxHeight: "8rem",
+            }}
+            onClick={() => {
+              if (style) {
+                let newColor = Object.keys(style.colors)[0];
+                if (
+                  selectedPart === "hands" &&
+                  selections &&
+                  selections.head &&
+                  style.colors[selections.head.color]
+                ) {
+                  newColor = selections.head.color;
+                }
+                setSelections((prev) => ({
+                  ...prev,
+                  [selectedPart]: {
+                    styleIdx: idx,
+                    color: newColor,
+                  },
+                }));
+              }
+            }}
+          >
+            {style && (
+              <img
+                src={style.colors[previewColorKey]}
+                alt={style.name}
+                className="w-3/4 h-3/4 object-contain"
+              />
+            )}
+          </div>
+        );
+      })}
     </div>
   );
 }
@@ -293,13 +313,14 @@ function AvatarCanvas({ selections, avatarBg, avatarParts, isRandomizing }) {
   ];
   // Custom z-index for each part
   const zIndexMap = {
-    shirt: 100,
+    shirt: 110,
     head: 50,
     hair: 80,
     eye: 70,
-    earrings: 100,
+    earrings: 90,
     hands: 10,
     tattoos: 60,
+    headgear: 100,
     // Add more parts and z-index values as needed
   };
   const PARTS = getParts(avatarParts);
@@ -309,7 +330,18 @@ function AvatarCanvas({ selections, avatarBg, avatarParts, isRandomizing }) {
     ...PARTS.filter((part) => !preferredOrder.includes(part)),
   ];
   const avatarUrls = sortedParts
-    .map((part) => getCurrentSrc(part, selections, avatarParts))
+    .map((part) => {
+      // If headgear is BlockSign, treat as none (do not render)
+      if (
+        part === "headgear" &&
+        selections.headgear &&
+        avatarParts.headgear &&
+        selections.headgear.color === "BlockSign"
+      ) {
+        return null;
+      }
+      return getCurrentSrc(part, selections, avatarParts);
+    })
     .filter(Boolean);
   const loaded = usePreloadImages(avatarUrls);
   if (isRandomizing) {
@@ -326,6 +358,15 @@ function AvatarCanvas({ selections, avatarBg, avatarParts, isRandomizing }) {
       style={{ background: avatarBg }}
     >
       {sortedParts.map((part, idx) => {
+        // If headgear is BlockSign, skip rendering
+        if (
+          part === "headgear" &&
+          selections.headgear &&
+          avatarParts.headgear &&
+          selections.headgear.color === "BlockSign"
+        ) {
+          return null;
+        }
         const src = getCurrentSrc(part, selections, avatarParts);
         if (!src) return null;
         const zIndex =
@@ -535,6 +576,7 @@ function App() {
               selectedStyleIdx={selectedStyleIdx}
               setSelections={setSelections}
               selectedPart={selectedPart}
+              selections={selections}
             />
             <ColorSelector
               colors={colors}
