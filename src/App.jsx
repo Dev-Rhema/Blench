@@ -176,7 +176,12 @@ function StyleSelector({
     <div className="grid grid-cols-2 gap-2 w-full max-w-xs mx-auto">
       {paddedStyles.map((style, idx) => {
         let previewColorKey = style ? Object.keys(style.colors)[0] : null;
-        if (style && selectedPart === "hands" && selections && selections.head) {
+        if (
+          style &&
+          selectedPart === "hands" &&
+          selections &&
+          selections.head
+        ) {
           const headColor = selections.head.color;
           if (style.colors[headColor]) {
             previewColorKey = headColor;
