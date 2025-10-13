@@ -173,7 +173,7 @@ function StyleSelector({
 }) {
   // For hands, preview with current head color if available
   return (
-    <div className="grid grid-cols-2 gap-2 w-full max-w-xs mx-auto">
+    <div className="grid grid-cols-4 gap-2 w-full">
       {paddedStyles.map((style, idx) => {
         let previewColorKey = style ? Object.keys(style.colors)[0] : null;
         if (
@@ -400,6 +400,29 @@ function App() {
   const [avatarBg, setAvatarBg] = useState("#27272a");
   const [isRandomizing, setIsRandomizing] = useState(false);
   const [pendingRandomSelections, setPendingRandomSelections] = useState(null);
+  const [isTraitLoading, setIsTraitLoading] = useState(false);
+  // Preload trait images for selected part and show spinner
+  useEffect(() => {
+    if (!selectedPart || !avatarParts[selectedPart]) return;
+    const styles = avatarParts[selectedPart].styles;
+    const traitUrls = styles.flatMap((style) => Object.values(style.colors));
+    if (traitUrls.length === 0) {
+      setIsTraitLoading(false);
+      return;
+    }
+    setIsTraitLoading(true);
+    let loadedCount = 0;
+    traitUrls.forEach((url) => {
+      const img = new window.Image();
+      img.onload = img.onerror = () => {
+        loadedCount++;
+        if (loadedCount === traitUrls.length) {
+          setIsTraitLoading(false);
+        }
+      };
+      img.src = url;
+    });
+  }, [selectedPart, avatarParts]);
 
   // Update avatarParts and selections when gender changes
   React.useEffect(() => {
@@ -540,11 +563,11 @@ function App() {
             background: "rgba(10,10,60,0.32)",
             border: "1px solid rgba(200,0,40,0.42)",
           }}
-          className="rounded-2xl shadow-[0_4px_30px_rgba(0,0,0,0.2)] backdrop-blur-[4.3px] w-[80vw] min-h-[70vh] grid grid-cols-3 juc items-center p-10 gap-6 mb-10 max-lg:grid-cols-1 max-lg:w-full max-lg:rounded-none max-lg:p-2 max-lg:h-full max-lg:gap-0"
+          className="rounded-2xl shadow-[0_4px_30px_rgba(0,0,0,0.2)] backdrop-blur-[4.3px] w-[80vw] min-h-[70vh] grid grid-cols-2 juc items-center p-10 gap-6 mb-10 max-lg:grid-cols-1 max-lg:w-full max-lg:rounded-none max-lg:p-2 max-lg:h-full max-lg:gap-0"
         >
           {/* OPTIONS */}
           <div
-            className="border border-rose-100 h-full p-6 gap-2 flex flex-col max-lg:mb-4"
+            className="border border-rose-100 h-full p-6 gap-2 flex flex-col w-full max-lg:mb-4"
             style={{ background: "rgba(10,10,60,0.12)" }}
           >
             {/* Gender Selection Buttons */}
@@ -572,29 +595,39 @@ function App() {
             </div>
             <PartSelector
               selectedPart={selectedPart}
-              setSelectedPart={setSelectedPart}
+              setSelectedPart={(part) => {
+                setSelectedPart(part);
+              }}
               selections={selections}
               avatarParts={avatarParts}
             />
-            <StyleSelector
-              paddedStyles={paddedStyles}
-              selectedStyleIdx={selectedStyleIdx}
-              setSelections={setSelections}
-              selectedPart={selectedPart}
-              selections={selections}
-            />
-            <ColorSelector
-              colors={colors}
-              selectedStyleIdx={selectedStyleIdx}
-              selectedColor={selectedColor}
-              styles={styles}
-              setSelections={setSelections}
-              selectedPart={selectedPart}
-              selections={selections}
-            />
+            {isTraitLoading ? (
+              <div className="flex justify-center items-center h-32">
+                <Spinner size={48} />
+              </div>
+            ) : (
+              <>
+                <StyleSelector
+                  paddedStyles={paddedStyles}
+                  selectedStyleIdx={selectedStyleIdx}
+                  setSelections={setSelections}
+                  selectedPart={selectedPart}
+                  selections={selections}
+                />
+                <ColorSelector
+                  colors={colors}
+                  selectedStyleIdx={selectedStyleIdx}
+                  selectedColor={selectedColor}
+                  styles={styles}
+                  setSelections={setSelections}
+                  selectedPart={selectedPart}
+                  selections={selections}
+                />
+              </>
+            )}
           </div>
           {/* CANVAS */}
-          <div className="col-span-2 border border-rose-100 h-full flex flex-col justify-center items-center">
+          <div className="border border-rose-100 h-full flex flex-col justify-center items-center w-full">
             <main className="w-full flex flex-col items-center justify-center m-auto h-full">
               <AvatarCanvas
                 selections={selections}
